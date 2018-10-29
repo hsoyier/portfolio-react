@@ -10,13 +10,13 @@ img {
 }
 
 h2 {
+  text-align: center;
   font-size: 3rem;
-  border-left: 15px solid #333;
   padding: 1rem;
 }
 
 .wrapper {
-  width: 1080px;
+  width: 1000px;
   height: auto;
   margin: 0 auto;
 }
@@ -35,7 +35,7 @@ h2 {
   position: absolute;
   top: 340px;
   background: #fff;
-  padding: 1.2rem;
+  padding: 0.2rem 1rem;
 }
 
 .home__title {
@@ -75,7 +75,7 @@ h2 {
 }
 
 .about__profile {
-  flex: 2;
+  flex: 1.8;
   padding: 0 5rem 0 0;
 }
 
@@ -86,22 +86,15 @@ h2 {
 }
 
 .about__profile--position {
-  font-size: 1.4rem;
+  font-size: 1.8rem;
 }
 
 .about__img {
-  flex: 1;
+  flex: 1.2;
 }
 
 .skills {
   margin-top: 4rem;
-}
-
-.skills__list {
-  padding: 0;
-  display: flex;
-  list-style-type: none;
-  justify-content: space-around;
 }
 
 .skills__level {
@@ -109,14 +102,27 @@ h2 {
   margin-top: 3rem;
 }
 
+.skills__list {
+  padding: 0;
+  display: flex;
+  list-style-type: none;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+
 .skills__item {
-  background: #f7f7f7;
   padding: 1rem;
   text-align: center;
+  margin-bottom: 1rem;
 }
 
 .skills__icon {
   margin: 0;
+}
+
+.skills__icon svg {
+  width: 50px;
+  height: auto;
 }
 
 .skills__title {
@@ -144,6 +150,62 @@ h2 {
 
 .project__discription {
 
+}
+
+.contact {
+  text-align: center;
+  margin-bottom: 150px;
+}
+
+.contact__text {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.contact__btnWrap {
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+
+.contact__btn {
+  border: none;
+} 
+
+.contact__btn a {
+  color: #fff;
+  padding: 1rem 4rem;
+  background: #58B09C;
+  border-radius: 2rem;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.sns {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.sns__list {
+  padding: 0;
+}
+
+.sns__list--item {
+  display: inline-block;
+}
+
+.sns__list--item i {
+  font-size: 2rem;
+  padding: 0 1rem;
+}
+
+.sns__list--item a {
+  color: #333;
+}
+
+.copyright {
+  font-size: 0.9rem;
+  letter-spacing: 0.2em;
 }
 
 /* .App {
