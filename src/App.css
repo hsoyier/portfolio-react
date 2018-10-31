@@ -2,6 +2,7 @@ body {
   font-size: 62.5%; /* -> 10px; */
   font-size: 16px;
   line-height: 28px;
+  font-family: -apple-system, 'BlinkMacSystemFont',  Sans-Serif;
 }
 
 img {
@@ -9,14 +10,24 @@ img {
   height: auto;
 }
 
+p, div, h1, h2, h3, h4, h5, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
 h2 {
   text-align: center;
   font-size: 3rem;
   padding: 1rem;
+  margin-bottom: 2.4rem;
+}
+
+ul {
+  list-style-type: none;
 }
 
 .wrapper {
-  width: 1000px;
+  width: 960px;
   height: auto;
   margin: 0 auto;
 }
@@ -25,22 +36,39 @@ h2 {
   margin-top: 30px;
 }
 
-.home {
-  position: relative;
-  overflow: hidden;
-  margin-bottom: 150px;
+.header {
+  display: flex;
 }
 
-.home__titleBlock {
-  position: absolute;
-  top: 340px;
-  background: #fff;
-  padding: 0.2rem 1rem;
+.header__info {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  background: rgb(189, 189, 189);
+  color: #fff;
+  font-weight: normal;
+  padding: 1.4rem 1rem;
+}
+
+.home {
+  opacity: 0;
+  background: #c8c8c8;
+  height: 400px;
+  margin-bottom: 150px;
+  position: relative;
 }
 
 .home__title {
+  position: absolute;
+  bottom: 140px;
+  left: -100px;
   font-size: 5rem;
   font-weight: bold;
+  background: #fff;
+  padding: 1.6rem 2.2rem;
 }
 
 .home__subTitle {
@@ -48,25 +76,27 @@ h2 {
 }
 
 .nav {
-  overflow: hidden;
+  flex: 1;
 }
 
 .navList {
-  width: 40%;
-  float: right;
   display: flex;
   list-style-type: none;
+  justify-content: space-around;
 }
 
 .navList__item {
-  flex: 2;
-  justify-content: flex-end;
   text-align: right;
 }
 
 .navList__item a {
   color: #333;
   text-decoration: none;
+}
+
+.sns__header {
+  flex: 1;
+  text-align: right;
 }
 
 .about {
@@ -76,30 +106,31 @@ h2 {
 
 .about__profile {
   flex: 1.8;
-  padding: 0 5rem 0 0;
+  padding: 0 8rem 0 0;
 }
 
 .about__profile--name {
   font-size: 4rem;
   font-weight: bold;
   margin: 0;
+  margin-bottom: 2.4rem;
 }
 
-.about__profile--position {
-  font-size: 1.8rem;
+.about__profile--title {
+  font-size: 1.3rem;
+  font-weight: bold;
 }
 
 .about__img {
-  flex: 1.2;
+  flex: 1;
 }
 
-.skills {
-  margin-top: 4rem;
-}
-
-.skills__level {
-  font-weight: bold;
+.skills__list {
+  width: 90%;
+  height: auto;
+  margin: 0 auto;
   margin-top: 3rem;
+  margin-bottom: 150px;
 }
 
 .skills__list {
@@ -131,6 +162,10 @@ h2 {
   margin: 0;
 }
 
+.project {
+  margin-bottom: 150px;
+}
+
 .project__list {
   display: flex;
   justify-content: space-between;
@@ -140,16 +175,17 @@ h2 {
 
 .project__itemWrap {
   padding: 2rem;
+      text-align: center;
+}
 
+.project__itemWrap img {
+  margin-bottom: 2rem;
 }
 
 .project__title {
   font-size: 2rem;
   font-weight: bold;
-}
-
-.project__discription {
-
+  margin-bottom: 1.2rem;
 }
 
 .contact {
@@ -190,12 +226,18 @@ h2 {
   padding: 0;
 }
 
+.sns__header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
 .sns__list--item {
   display: inline-block;
 }
 
 .sns__list--item i {
-  font-size: 2rem;
+  font-size: 1.5rem;
   padding: 0 1rem;
 }
 
@@ -208,35 +250,43 @@ h2 {
   letter-spacing: 0.2em;
 }
 
-/* .App {
-  text-align: center;
+.logo {
+  animation: logo_popIn 1s ease-in-out 0s 1 normal forwards running;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+.home {
+  animation: home 1s ease-in-out 1.4s 1 normal forwards running;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.home__title {
+  animation: title_slideIn 1s ease-in-out 1.4s 1 normal forwards running;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@keyframes logo_popIn {
+  0% {
+      transform: translateY(-15px);
+    }
+  100% {
+      transform: scale(1) translateY(0);
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@keyframes home {
+  0% {
+    opacity: 1;
+    transform: translateX(-100px);
   }
-} */
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes title_slideIn {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(100px, 0);
+  }
+}

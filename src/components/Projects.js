@@ -9,21 +9,21 @@ const Projects = () => {
           <div className="project__itemWrap">
             <img src="http://placehold.it/250x300" alt="dummy" />
             <p className="project__title">Project Title</p>
-            <p className="project__discription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati delectus excepturi aliquid optio suscipit vero.</p>    
+            <p className="project__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati delectus excepturi aliquid optio suscipit vero.</p>    
           </div>
          </li>
         <li className="project__item">
           <div className="project__itemWrap">
             <img src="http://placehold.it/250x300" alt="dummy" />
             <p className="project__title">Project Title</p>
-            <p className="project__discription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati delectus excepturi aliquid optio suscipit vero.</p>    
+            <p className="project__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati delectus excepturi aliquid optio suscipit vero.</p>    
           </div>
         </li>
         <li className="project__item">
           <div className="project__itemWrap">
             <img src="http://placehold.it/250x300" alt="dummy" />
             <p className="project__title">Project Title</p>
-            <p className="project__discription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati delectus excepturi aliquid optio suscipit vero.</p>    
+            <p className="project__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati delectus excepturi aliquid optio suscipit vero.</p>    
           </div>
         </li>
       </ul>
