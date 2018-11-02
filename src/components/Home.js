@@ -1,12 +1,13 @@
 import React from 'react';
+import mainImg from '../assets/main.jpg'; 
 
 const Home = () => {
   return (
-    <React.Fragment>
-      <div className="home">
-        <h1 className="home__title">Rei Yoshizawa</h1>
-      </div>
-    </React.Fragment>
+    <div className="home__block">
+      <img src={mainImg} alt="" className="home__img" />
+      <div className="home__col1"></div>
+      <div className="home__col2"></div>
+    </div>
   )
 }
 
