@@ -20,9 +20,9 @@ export default class App extends Component {
         <div className="container">
           <Navigation />
           <Home />
-          <About />
-          <Skills />
           <Projects />
+          <Skills />
+          <About />
           <Contact />
           <Footer />
         </div>
