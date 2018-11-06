@@ -1,0 +1,147 @@
+.logo {
+  animation: logo_popIn 1s ease-in-out 0s 1 normal forwards running;
+}
+
+.home__imgBg {
+  animation: home__imgBg 1.2s cubic-bezier(0.62, 0, 0.11, 0.71) 0s 1 normal forwards running;
+}
+
+.home__firstname {
+  display: flex;
+}
+
+.home__firstnameBg {
+  animation: home__firstnameBg 2.2s cubic-bezier(0.62, 0, 0.11, 0.71) 0s 1 normal forwards running;
+}
+
+.home__lastnameBg {
+  animation: home__firstnameBg 2.0s cubic-bezier(0.62, 0, 0.11, 0.71) 1.5s 1 normal forwards running;
+}
+
+.home__firstname span:first-child {
+  display: block;
+  animation: home__firstname 1.8s cubic-bezier(0.62, 0, 0.11, 0.71) 0s 1 normal forwards running;
+}
+
+.home__firstname span:nth-child(2) {
+  display: block;
+  animation: home__firstname 1.8s cubic-bezier(0.62, 0, 0.11, 0.71) 0.2s 1 normal forwards running;
+}
+
+.home__firstname span:last-child {
+  display: block;
+  animation: home__firstname 1.8s cubic-bezier(0.62, 0, 0.11, 0.71) 0.4s 1 normal forwards running;
+}
+
+.home__lastname span:first-child {
+  display: block;
+  animation: home__firstname 1.8s cubic-bezier(0.62, 0, 0.11, 0.71) 1s 1 normal forwards running;
+}
+
+.home__lastname span:nth-child(2) {
+  display: block;
+  animation: home__firstname 1.8s cubic-bezier(0.62, 0, 0.11, 0.71) 1s 1 normal forwards running;
+}
+
+.home__lastname span:nth-child(3) {
+  display: block;
+  animation: home__firstname 1.8s cubic-bezier(0.62, 0, 0.11, 0.71) 1.2s 1 normal forwards running;
+}
+
+.home__lastname span:nth-child(4) {
+  display: block;
+  animation: home__firstname 1.8s cubic-bezier(0.62, 0, 0.11, 0.71) 1.2s 1 normal forwards running;
+}
+
+.home__lastname span:nth-child(5) {
+  display: block;
+  animation: home__firstname 1.8s cubic-bezier(0.62, 0, 0.11, 0.71) 1.4s 1 normal forwards running;
+}
+
+.home__lastname span:nth-child(6) {
+  display: block;
+  animation: home__firstname 1.8s cubic-bezier(0.62, 0, 0.11, 0.71) 1.4s 1 normal forwards running;
+}
+
+.home__lastname span:nth-child(7) {
+  display: block;
+  animation: home__firstname 1.8s cubic-bezier(0.62, 0, 0.11, 0.71) 1.4s 1 normal forwards running;
+}
+
+.home__lastname span:nth-child(8) {
+  display: block;
+  animation: home__firstname 1.8s cubic-bezier(0.62, 0, 0.11, 0.71) 1.6s 1 normal forwards running;
+}
+
+.home__lastname span:last-child {
+  display: block;
+  animation: home__firstname 1.8s cubic-bezier(0.62, 0, 0.11, 0.71) 1.6s 1 normal forwards running;
+}
+
+.contact__btn:hover { 
+  transform:rotate(35deg);
+}
+
+.contact__btn a:hover {
+  animation: animation_contact 2s ease-out 0s 1 normal forwards running;
+}
+
+.contact__btn {
+  transition-duration: 1s;
+}
+
+@keyframes logo_popIn {
+  0% {
+      transform: translateY(-15px);
+    }
+  100% {
+      transform: scale(1) translateY(0);
+  }
+}
+
+@keyframes home__imgBg {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(418px);
+  }
+}
+
+@keyframes home__firstnameBg {
+  0% {
+    transform: translateY(0);
+    width: 420px;
+    height: 220px;
+  }
+  20% {
+    width: 420px;
+    height: 220px;
+  }
+  100% {
+    transform: translateY(180px);
+    width: 0;
+    height: 0;
+    visibility: hidden;
+  }
+}
+
+@keyframes home__firstname {
+  0% {
+    transform: translateY(140px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes animation_contact {
+  50% {
+    opacity: 0.5;
+    background: #FF715B;
+  }
+  100% {
+    opacity: 0.7;
+    background: #FF715B;
+  }
+}
