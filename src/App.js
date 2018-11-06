@@ -10,13 +10,9 @@ import Projects from './components/Projects';
 import Contact from './components/Contact';
 
 export default class App extends Component {
-
-  render() {
-    var scrollElement = document.scrollingElement; // documentのスクロール要素取得
-    var scrollValue = scrollElement.scrollTop; 
-    console.log(scrollValue);
+  render() {  
     return (
-      <div className="wrapper">
+      <div className="wrapper" id="wrapper">
         <div className="container">
           <Navigation />
           <Home />

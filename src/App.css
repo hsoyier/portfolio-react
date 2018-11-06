@@ -85,6 +85,7 @@ ul {
 .about__profile {
   flex: 1.8;
   padding: 0 8rem 0 0;
+  transform: translate(90px, 40px);
 }
 
 .about__profile--name {
@@ -159,11 +160,15 @@ ul {
 
 .project__itemWrap {
   padding: 2rem;
-      text-align: center;
+  text-align: center;
 }
 
 .project__itemWrap img {
   margin-bottom: 1rem;
+}
+
+.project__item {
+  transform: translateY(100px);
 }
 
 .project__title {
@@ -199,11 +204,10 @@ ul {
 
 .contact__btn a {
   color: #fff;
-  padding: 1rem 4rem;
-  background: #58B09C;
-  border-radius: 2rem;
+  padding: 1.5rem 0.9rem 1rem 0.9rem;
+  background: #17BEBB;
   text-decoration: none;
-  font-weight: bold;
+  border-radius: 50%;
 }
 
 .sns {
@@ -333,4 +337,61 @@ ul {
     z-index: 10;
   }
 }
+
+@keyframes animation_projects01 {
+  0% {
+    transform: translateY(100px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes animation_profile {
+  0% {
+    transform: translate(90px, 40px);
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes animation_contact {
+  50% {
+    opacity: 0.5;
+    background: #FF715B;
+  }
+  100% {
+    opacity: 0.7;
+    background: #FF715B;
+  }
+}
+
+.animation_projects01 { 
+  animation: animation_projects01 0.7s ease-in 0s 1 normal forwards running;
+}
+.animation_projects02 { 
+  animation: animation_projects01 0.7s ease-in 0.3s 1 normal forwards running;
+}
+.animation_projects03 { 
+  animation: animation_projects01 0.7s ease-in 0.6s 1 normal forwards running;
+}
+.animation_profile {
+  animation: animation_profile 0.8s ease-out 0s 1 normal forwards running;
+}
+.animation_profileImg {
+  animation: animation_profile 0.8s ease-out 0s 1 normal forwards running;
+}
+.contact__btn:hover { 
+  transform:rotate(35deg);
+}
+.contact__btn a:hover {
+  animation: animation_contact 2s ease-out 0s 1 normal forwards running;
+}
+.contact__btn {
+  transition-duration: 1s;
+}
+
 
