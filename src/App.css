@@ -78,7 +78,7 @@ ul {
 }
 
 .home__block {
-  margin-bottom: 150px;
+  margin-bottom: 4rem;
   width: 960px;
   height: 540px;
 }
@@ -94,8 +94,6 @@ ul {
 }
 
 .home__imgBg {
-  width: 418px;
-  height: 523px;
   position: absolute;
   background: #fff;
   z-index: 10;
@@ -156,7 +154,7 @@ ul {
 
 .about {
   display: flex;
-  margin-bottom: 150px;
+  margin-bottom: 4rem;
 }
 
 .about__profile {
@@ -192,7 +190,7 @@ ul {
   height: auto;
   margin: 0 auto;
   margin-top: 3rem;
-  margin-bottom: 150px;
+  margin-bottom: 4rem;
 }
 
 .skills__list {
@@ -225,7 +223,7 @@ ul {
 }
 
 .project {
-  margin-bottom: 150px;
+  margin-bottom: 4rem;
 }
 
 .project__list {
@@ -256,7 +254,7 @@ ul {
 
 .contact {
   text-align: center;
-  margin-bottom: 150px;
+  margin-bottom: 4rem;
 }
 
 .contact__text {
@@ -315,5 +313,98 @@ ul {
   font-size: 0.9rem;
   font-weight: 300;
   letter-spacing: 0.2em;
+}
+
+@media screen and (max-width:640px) {
+  .wrapper {
+    width: 100%;
+  }
+  .container {
+    margin-top: 10px; 
+  }
+  .header {
+    display: block;
+  } 
+  .header__info {
+    display: block;
+  }
+  .logo {
+    width: 30px;
+    height: 30px;
+    padding: 1rem;
+    margin: 0 auto;
+  }
+  .sns__header {
+    padding: 1rem 0;
+    justify-content: center;
+  }
+  .nav {
+    display: none;
+  }
+  .home__block, .home__bg {
+    width: 100%;
+    margin-bottom: 1rem;
+    height: auto;
+  }
+  .home__block {
+    padding: 3rem 0;
+    margin: 0 auto;
+    width: 90%;
+  }
+  .home__bg {
+    display: block;
+  }
+  .home__firstnameBg {
+    display: none;
+  }
+  .home__lastnameBg {
+    display: none;
+  }
+  .home__firstname {
+    font-size: 8rem;
+    position: initial;
+    display: initial;
+    margin-bottom: 4rem;
+    position: absolute;
+    top: 100px;
+    color: #fff;
+  }
+  .home__lastname {
+    font-size: 1.2rem;
+    line-height: 2.5rem;
+    position: initial;
+    display: flex;
+    position: absolute;
+    top: 200px;
+    color: #fff;
+    background: #8d8d8d;
+  }
+  .home__lastname.second {
+    top: 240px;
+  }
+  .about {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 4rem;
+  }
+  .about__profile {
+    flex: none;
+    width: 100%;
+    padding: 0;
+  }
+  .about__profile--name {
+    line-height: 3.5rem;
+    font-size: 3rem;
+  }
+  .project__list {
+    display: block;
+  }
+  .contact__text {
+    width: 90%;
+  }
+  .contact__btn {
+    background: none;
+  }
 }
 
