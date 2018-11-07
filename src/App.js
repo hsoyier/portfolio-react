@@ -17,9 +17,9 @@ export default class App extends Component {
         <div className="container">
           <Navigation />
           <Home />
+          <About />
           <Works />
           <Skills />
-          <About />
           <Contact />
           <Footer />
         </div>

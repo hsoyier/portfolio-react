@@ -2,19 +2,19 @@ import React from 'react';
 import profile from '../assets/profile.jpg'; 
 
 const About = () => {
-  window.addEventListener("scroll", () => {
-    const scrollTop = document.documentElement.scrollTop;
-    console.log(scrollTop);
-    if (scrollTop > 1700) {
-      const about__profile = document.getElementById("about__profile");
-      const animation_profile = "animation_profile";
-      about__profile.className += " " + animation_profile;
+  // window.addEventListener("scroll", () => {
+  //   const scrollTop = document.documentElement.scrollTop;
+  //   console.log(scrollTop);
+  //   if (scrollTop > 1700) {
+  //     const about__profile = document.getElementById("about__profile");
+  //     const animation_profile = "animation_profile";
+  //     about__profile.className += " " + animation_profile;
 
-      const about__img = document.getElementById("about__img");
-      const animation_profileImg = "animation_profileImg";
-      about__img.className += " " + animation_profileImg;
-    }
-  });
+  //     const about__img = document.getElementById("about__img");
+  //     const animation_profileImg = "animation_profileImg";
+  //     about__img.className += " " + animation_profileImg;
+  //   }
+  // });
 
   return (
     <section id="about" className="about">
