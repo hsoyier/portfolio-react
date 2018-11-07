@@ -105,6 +105,7 @@
   }
   100% {
     transform: translateX(418px);
+    visibility: hidden;
   }
 }
 

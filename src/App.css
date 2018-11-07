@@ -86,6 +86,7 @@ ul {
 .home__bg {
   display: flex;
   position: relative;
+  height: 520px;
 }
 
 .home__bg--b {
@@ -315,6 +316,4 @@ ul {
   font-weight: 300;
   letter-spacing: 0.2em;
 }
-
-
 
