@@ -6,20 +6,14 @@ const Navigation = () => {
     <header className="header">
       <div className="header__info">
         <h1 className="logo">Rei</h1>
-        <nav className="nav">
-          <ul className="navList">
-            <li className="navList__item navList__item01"><a href="#about">About</a></li>
-            <li className="navList__item navList__item02"><a href="#projects">Works</a></li>
-            <li className="navList__item navList__item03"><a href="#contact">Contact</a></li>
-          </ul>
-        </nav>
       </div> 
-      <ul className="sns__list sns__header">
-        <li className="sns__list--item"><a href="https://github.com/reiyoshizawa"><i className="fab fa-github"></i></a></li>
-        <li className="sns__list--item"><a href="https://www.linkedin.com/in/rei-yoshizawa-0a3322b6/"><i className="fab fa-linkedin"></i></a></li>
-        <li className="sns__list--item"><a href="https://twitter.com/ReiYoshizawa_?lang=ja"><i className="fab fa-twitter-square"></i></a></li>
-        <li className="sns__list--item"><a href="https://www.instagram.com/reydejapon/?hl=ja"><i className="fab fa-instagram"></i></a></li>
-      </ul>
+      <nav className="nav">
+        <ul className="navList">
+          <li className="navList__item navList__item01"><a href="#about">About</a></li>
+          <li className="navList__item navList__item02"><a href="#projects">Works</a></li>
+          <li className="navList__item navList__item03"><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
     </header>
   )
 }

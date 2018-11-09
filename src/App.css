@@ -27,7 +27,7 @@ ul {
 }
 
 .wrapper {
-  width: 960px;
+  width: 1000px;
   height: auto;
   margin: 0 auto;
 }
@@ -53,23 +53,37 @@ ul {
   padding: 1.4rem 1rem;
 }
 
-.nav {
-  flex: 1;
-}
-
 .navList {
   display: flex;
   list-style-type: none;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .navList__item {
   text-align: right;
+  width: 100px;
 }
 
 .navList__item a {
-  color: #000;
   text-decoration: none;
+  color: #000;
+  position: relative;
+  padding-bottom: 0.4rem;
+  display: inline-block;
+}
+
+.navList__item a:after {
+  content: '';
+  position: absolute;
+  border-bottom: 1px solid black;
+  bottom: 0;
+  left: 0;
+  right: 100%;
+  transition: all 0.4s ease-out;
+}
+
+.navList__item a:hover:after {
+  right: 0;
 }
 
 .sns__header {
@@ -78,8 +92,8 @@ ul {
 }
 
 .home__block {
-  margin-bottom: 4rem;
-  width: 960px;
+  margin-bottom: 9rem;
+  width: 1000px;
   height: 540px;
 }
 
@@ -99,30 +113,10 @@ ul {
   z-index: 10;
 }
 
-.home__firstnameBg {
-  background: #fff;
-  position: absolute;
-  top: 27%;
-  left: 5%;
-  z-index: 10;
-  height: 280px;
-  width: 400px;
-}
-
-.home__lastnameBg {
-  background: #fff;
-  position: absolute;
-  top: 68%;
-  left: 5%;
-  z-index: 10;
-  height: 220px;
-  width: 420px;
-}
-
 .home__firstname {
   position: absolute;
   top: 38%;
-  left: 5%;
+  left: 0;
   font-size: 12rem;
   color: #000;
   font-weight: bold;
@@ -130,31 +124,20 @@ ul {
 }
 
 .home__lastname {
+  width: 56%;
   display: flex;
   position: absolute;
-  top: 68%;
-  left: 7%;
-  font-size: 1.8rem;
+  top: 70%;
+  left: 0;
+  font-size: 1.5rem;
   color: #000;
-  font-weight: bold;
-  letter-spacing: 1.2rem;
-}
-
-.home__lastname.second{
-  top: 78%;
-}
-
-.home__position {
-  position: absolute;
-  top: 57%;
-  left: 12%;
-  font-size: 2rem;
-  color: #000;
+  letter-spacing: 0.2rem;
+  line-height: 2.4rem;
 }
 
 .about {
   display: flex;
-  margin-bottom: 4rem;
+  margin-bottom: 9rem;
 }
 
 .about__profile {
@@ -190,7 +173,7 @@ ul {
   height: auto;
   margin: 0 auto;
   margin-top: 3rem;
-  margin-bottom: 4rem;
+  margin-bottom: 9rem;
 }
 
 .skills__list {
@@ -223,7 +206,7 @@ ul {
 }
 
 .project {
-  margin-bottom: 4rem;
+  margin-bottom: 9rem;
 }
 
 .project__list {
@@ -254,7 +237,7 @@ ul {
 
 .contact {
   text-align: center;
-  margin-bottom: 4rem;
+  margin-bottom: 9rem;
 }
 
 .contact__text {
@@ -283,7 +266,7 @@ ul {
 
 .sns {
   text-align: center;
-  margin-bottom: 5rem;
+  margin-bottom: 3rem;
 }
 
 .sns__list {
@@ -327,12 +310,14 @@ ul {
   } 
   .header__info {
     display: block;
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 1.5rem;
   }
   .logo {
     width: 30px;
     height: 30px;
     padding: 1rem;
-    margin: 0 auto;
   }
   .sns__header {
     padding: 1rem 0;
@@ -347,18 +332,12 @@ ul {
     height: auto;
   }
   .home__block {
-    padding: 3rem 0;
+    padding: 2rem 0;
     margin: 0 auto;
-    width: 90%;
+    width: 100%;
   }
   .home__bg {
     display: block;
-  }
-  .home__firstnameBg {
-    display: none;
-  }
-  .home__lastnameBg {
-    display: none;
   }
   .home__firstname {
     font-size: 8rem;
@@ -396,6 +375,9 @@ ul {
   .about__profile--name {
     line-height: 3.5rem;
     font-size: 3rem;
+  }
+  .project h2{
+    margin-bottom: 1rem;
   }
   .project__list {
     display: block;

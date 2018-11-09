@@ -10,14 +10,6 @@
   display: flex;
 }
 
-.home__firstnameBg {
-  animation: home__firstnameBg 2.2s cubic-bezier(0.62, 0, 0.11, 0.71) 0s 1 normal forwards running;
-}
-
-.home__lastnameBg {
-  animation: home__firstnameBg 1.9s cubic-bezier(0.62, 0, 0.11, 0.71) 1.3s 1 normal forwards running;
-}
-
 .home__firstname span:first-child {
   display: block;
   animation: home__firstname 1.8s cubic-bezier(0.62, 0, 0.11, 0.71) 0s 1 normal forwards running;
@@ -33,49 +25,8 @@
   animation: home__firstname 1.8s cubic-bezier(0.62, 0, 0.11, 0.71) 0.4s 1 normal forwards running;
 }
 
-.home__lastname span:first-child {
-  display: block;
+.home__lastname {
   animation: home__firstname 1.8s cubic-bezier(0.62, 0, 0.11, 0.71) 1s 1 normal forwards running;
-}
-
-.home__lastname span:nth-child(2) {
-  display: block;
-  animation: home__firstname 1.8s cubic-bezier(0.62, 0, 0.11, 0.71) 1s 1 normal forwards running;
-}
-
-.home__lastname span:nth-child(3) {
-  display: block;
-  animation: home__firstname 1.8s cubic-bezier(0.62, 0, 0.11, 0.71) 1.2s 1 normal forwards running;
-}
-
-.home__lastname span:nth-child(4) {
-  display: block;
-  animation: home__firstname 1.8s cubic-bezier(0.62, 0, 0.11, 0.71) 1.2s 1 normal forwards running;
-}
-
-.home__lastname span:nth-child(5) {
-  display: block;
-  animation: home__firstname 1.8s cubic-bezier(0.62, 0, 0.11, 0.71) 1.4s 1 normal forwards running;
-}
-
-.home__lastname span:nth-child(6) {
-  display: block;
-  animation: home__firstname 1.8s cubic-bezier(0.62, 0, 0.11, 0.71) 1.4s 1 normal forwards running;
-}
-
-.home__lastname span:nth-child(7) {
-  display: block;
-  animation: home__firstname 1.8s cubic-bezier(0.62, 0, 0.11, 0.71) 1.4s 1 normal forwards running;
-}
-
-.home__lastname span:nth-child(8) {
-  display: block;
-  animation: home__firstname 1.8s cubic-bezier(0.62, 0, 0.11, 0.71) 1.6s 1 normal forwards running;
-}
-
-.home__lastname span:last-child {
-  display: block;
-  animation: home__firstname 1.8s cubic-bezier(0.62, 0, 0.11, 0.71) 1.6s 1 normal forwards running;
 }
 
 .contact__btn:hover { 
@@ -117,26 +68,17 @@
   }
 }
 
-@keyframes home__firstnameBg {
-  0% {
-    transform: translateY(0);
-    width: 420px;
-    height: 220px;
-  }
-  100% {
-    transform: translateY(180px);
-    width: 0;
-    height: 0;
-    visibility: hidden;
-  }
-}
-
 @keyframes home__firstname {
   0% {
-    transform: translateY(90px);
+    transform: translateY(80px);
+    opacity: 0;
+  }
+  30% {
+    opacity: 0;
   }
   100% {
     transform: translateY(0);
+    opacity: 1;
   }
 }
 
