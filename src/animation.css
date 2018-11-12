@@ -2,31 +2,16 @@
   animation: logo_popIn 1s ease-in-out 0s 1 normal forwards running;
 }
 
-.home__imgBg {
-  animation: home__imgBg 1.2s cubic-bezier(0.62, 0, 0.11, 0.71) 0s 1 normal forwards running;
+.title span:after {
+  animation: 1s introblock forwards;
 }
 
-.home__firstname {
-  display: flex;
-}
-
-.home__firstname span:first-child {
-  display: block;
-  animation: home__firstname 1.8s cubic-bezier(0.62, 0, 0.11, 0.71) 0s 1 normal forwards running;
-}
-
-.home__firstname span:nth-child(2) {
-  display: block;
-  animation: home__firstname 1.8s cubic-bezier(0.62, 0, 0.11, 0.71) 0.2s 1 normal forwards running;
-}
-
-.home__firstname span:last-child {
-  display: block;
-  animation: home__firstname 1.8s cubic-bezier(0.62, 0, 0.11, 0.71) 0.4s 1 normal forwards running;
-}
-
-.home__lastname {
-  animation: home__firstname 1.8s cubic-bezier(0.62, 0, 0.11, 0.71) 1s 1 normal forwards running;
+h2 > span { 
+  animation: 1s introtext forwards;
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  line-height: 1.2;
 }
 
 .contact__btn:hover { 
@@ -42,43 +27,44 @@
 }
 
 @keyframes logo_popIn {
+  0% {transform: translateY(-15px);}
+  100% {transform: scale(1) translateY(0);}
+}
+
+
+@keyframes introtext {
   0% {
-      transform: translateY(-15px);
-    }
+      color: transparent;
+  }
+
+  51% {
+      color: transparent
+  }
+
+  52% {
+      color: black;
+  }
+
   100% {
-      transform: scale(1) translateY(0);
+      color: black;
   }
 }
 
-@keyframes home__imgBg {
+@keyframes introblock {
   0% {
-    transform: translateX(0);
-    width: 418px;
-    height: 523px;
+      transform: translate3d(-100%, 0, 0);
   }
-  80% {
-    width: 418px;
-    height: 523px;
-  }
-  100% {
-    transform: translateX(418px);
-    width: 0;
-    height: 0;
-    visibility: hidden;
-  }
-}
 
-@keyframes home__firstname {
-  0% {
-    transform: translateY(80px);
-    opacity: 0;
+  50% {
+      transform: translate3d(0, 0, 0);
   }
-  30% {
-    opacity: 0;
+
+  52% {
+      transform: translate3d(0, 0, 0);
   }
+
   100% {
-    transform: translateY(0);
-    opacity: 1;
+      transform: translate3d(105%, 0, 0);
   }
 }
 

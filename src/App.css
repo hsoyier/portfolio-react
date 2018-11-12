@@ -33,7 +33,7 @@ ul {
 }
 
 .container {
-  margin-top: 30px;
+  margin-top: 4rem;
 }
 
 .header {
@@ -91,48 +91,42 @@ ul {
   text-align: right;
 }
 
-.home__block {
+.home {
+  padding: 2rem 0;
   margin-bottom: 9rem;
-  width: 1000px;
-  height: 540px;
 }
 
-.home__bg {
-  display: flex;
+.title {
+  text-align: left;
+  font-size: 4rem;
+  padding: 0;
+  margin-bottom: 3.4rem;
+  display: table-caption;
+}
+
+.title span {
   position: relative;
-  height: 520px;
+  display: inline-block;
+  font-size: 4.4rem;
+  font-weight: 900;
+  margin-top: 10px;
+  letter-spacing: 10px;
 }
 
-.home__bg--b {
-  flex: 1;
-}
-
-.home__imgBg {
+.title span:after {
+  content: "";
   position: absolute;
-  background: #fff;
-  z-index: 10;
-}
-
-.home__firstname {
-  position: absolute;
-  top: 38%;
   left: 0;
-  font-size: 12rem;
-  color: #000;
-  font-weight: bold;
-  letter-spacing: 1.5rem;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
 }
 
-.home__lastname {
-  width: 56%;
-  display: flex;
-  position: absolute;
-  top: 70%;
-  left: 0;
-  font-size: 1.5rem;
-  color: #000;
-  letter-spacing: 0.2rem;
-  line-height: 2.4rem;
+.title__detail {
+  width: 50%;
+  line-height: 1.9rem;
+  opacity: 0.8;
 }
 
 .about {
@@ -241,7 +235,9 @@ ul {
 }
 
 .contact__text {
+  width: 60%;
   text-align: center;
+  margin: 0 auto;
   margin-bottom: 3rem;
   font-weight: 300;
 }
@@ -325,41 +321,6 @@ ul {
   }
   .nav {
     display: none;
-  }
-  .home__block, .home__bg {
-    width: 100%;
-    margin-bottom: 1rem;
-    height: auto;
-  }
-  .home__block {
-    padding: 2rem 0;
-    margin: 0 auto;
-    width: 100%;
-  }
-  .home__bg {
-    display: block;
-  }
-  .home__firstname {
-    font-size: 8rem;
-    position: initial;
-    display: initial;
-    margin-bottom: 4rem;
-    position: absolute;
-    top: 100px;
-    color: #fff;
-  }
-  .home__lastname {
-    font-size: 1.2rem;
-    line-height: 2.5rem;
-    position: initial;
-    display: flex;
-    position: absolute;
-    top: 200px;
-    color: #fff;
-    background: #8d8d8d;
-  }
-  .home__lastname.second {
-    top: 240px;
   }
   .about {
     display: block;

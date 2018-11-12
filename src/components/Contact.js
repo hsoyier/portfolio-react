@@ -4,7 +4,8 @@ const Contact = (props) => {
   return (
     <section id="contact" className="contact">
       <h2>Contact</h2>
-      <p className="contact__text">Feel free to contact me, I won't dissapoint you</p>
+      <p className="contact__text">
+        Don’t hesitate to contact me if you are looking for the front end developer with strong passion for tech. I won't dissapoint you, Thanks!</p>
       <div className="contact__btnWrap">
         <button className="contact__btn">
           <a href="mailto:reiyoshizawa0418@gmail.com">
