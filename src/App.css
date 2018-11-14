@@ -1,8 +1,10 @@
-body {
+html {
   font-size: 62.5%;
-  font-size: 16px;
-  line-height: 28px;
-  font-family: -apple-system, 'BlinkMacSystemFont',  Sans-Serif;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: -apple-system, "BlinkMacSystemFont", Sans-Serif;
 }
 
 img {
@@ -10,15 +12,26 @@ img {
   height: auto;
 }
 
-p, div, h1, h2, h3, h4, h5, ul, li {
+p,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+ul,
+li {
   margin: 0;
   padding: 0;
 }
 
+p {
+  line-height: 3.4rem;
+}
+
 h2 {
-  text-align: center;
-  font-size: 3rem;
-  padding: 1rem;
+  font-size: 5rem;
+  padding: 0;
   margin-bottom: 2.4rem;
 }
 
@@ -26,14 +39,14 @@ ul {
   list-style-type: none;
 }
 
-.wrapper {
-  width: 1000px;
-  height: auto;
-  margin: 0 auto;
+section {
+  margin-bottom: 15rem;
 }
 
 .container {
-  margin-top: 4rem;
+  width: 1080px;
+  margin: 0 auto;
+  padding: 4rem 0;
 }
 
 .header {
@@ -73,7 +86,7 @@ ul {
 }
 
 .navList__item a:after {
-  content: '';
+  content: "";
   position: absolute;
   border-bottom: 1px solid black;
   bottom: 0;
@@ -92,8 +105,7 @@ ul {
 }
 
 .home {
-  padding: 2rem 0;
-  margin-bottom: 9rem;
+  padding: 6rem 0;
 }
 
 .title {
@@ -104,13 +116,13 @@ ul {
   display: table-caption;
 }
 
+.title__name {
+  font-size: 1.6rem;
+}
+
 .title span {
   position: relative;
   display: inline-block;
-  font-size: 4.4rem;
-  font-weight: 900;
-  margin-top: 10px;
-  letter-spacing: 10px;
 }
 
 .title span:after {
@@ -123,20 +135,35 @@ ul {
   background: black;
 }
 
+.title__name {
+  font-size: 3.5rem;
+}
+
+.title__position {
+  font-size: 8rem;
+  font-weight: 800;
+  letter-spacing: 1rem;
+  line-height: 8rem;
+}
+
 .title__detail {
   width: 50%;
-  line-height: 1.9rem;
   opacity: 0.8;
 }
 
 .about {
   display: flex;
-  margin-bottom: 9rem;
 }
 
 .about__profile {
   flex: 1.8;
   padding: 0 8rem 0 0;
+}
+
+.profile__name {
+  font-size: 2.4rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
 }
 
 .about__profile--name {
@@ -154,7 +181,6 @@ ul {
 
 .about__profile--text {
   font-weight: 300;
-  line-height: 1.75rem;
   margin-bottom: 1rem;
 }
 
@@ -162,7 +188,7 @@ ul {
   flex: 1;
 }
 
-.skills__list {
+/* .skills__list {
   width: 90%;
   height: auto;
   margin: 0 auto;
@@ -176,7 +202,7 @@ ul {
   list-style-type: none;
   flex-wrap: wrap;
   align-content: flex-start;
-}
+} */
 
 .skills__item {
   padding: 1rem;
@@ -199,28 +225,21 @@ ul {
   margin: 0;
 }
 
-.project {
-  margin-bottom: 9rem;
-}
-
 .project__list {
   display: flex;
   justify-content: space-between;
   padding: 0;
   list-style-type: none;
+  margin-top: 4rem;
 }
 
-.project__itemWrap {
-  padding: 2rem;
-  text-align: center;
-}
-
-.project__itemWrap img {
-  margin-bottom: 1rem;
+.project__item {
+  padding: 0;
+  width: 28%;
 }
 
 .project__title {
-  font-size: 1.3rem;
+  font-size: 2.2rem;
   font-weight: bold;
   margin-bottom: 0.6rem;
 }
@@ -229,40 +248,33 @@ ul {
   font-weight: 300;
 }
 
+.col2 {
+  display: flex;
+  justify-content: space-between;
+}
+
 .contact {
-  text-align: center;
-  margin-bottom: 9rem;
-}
-
-.contact__text {
-  width: 60%;
-  text-align: center;
-  margin: 0 auto;
-  margin-bottom: 3rem;
-  font-weight: 300;
-}
-
-.contact__btnWrap {
-  width: 100%;
-  height: auto;
-  text-align: center;
-}
-
-.contact__btn {
-  border: none;
-} 
-
-.contact__btn a {
-  color: #fff;
-  padding: 1.5rem 0.9rem 1rem 0.9rem;
-  background: #17BEBB;
-  text-decoration: none;
-  border-radius: 50%;
+  width: 45%;
 }
 
 .sns {
-  text-align: center;
-  margin-bottom: 3rem;
+  width: 45%;
+}
+
+.contact__text {
+  margin: 0 auto;
+}
+
+.contact__btnWrap {
+}
+
+.contact__btn {
+}
+
+.contact__btn a {
+}
+
+.sns {
 }
 
 .sns__list {
@@ -294,16 +306,16 @@ ul {
   letter-spacing: 0.2em;
 }
 
-@media screen and (max-width:640px) {
+@media screen and (max-width: 640px) {
   .wrapper {
     width: 100%;
   }
   .container {
-    margin-top: 10px; 
+    margin-top: 10px;
   }
   .header {
     display: block;
-  } 
+  }
   .header__info {
     display: block;
     width: 90%;
@@ -337,7 +349,7 @@ ul {
     line-height: 3.5rem;
     font-size: 3rem;
   }
-  .project h2{
+  .project h2 {
     margin-bottom: 1rem;
   }
   .project__list {
@@ -350,4 +362,3 @@ ul {
     background: none;
   }
 }
-

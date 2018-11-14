@@ -1,29 +1,33 @@
-import React, { Component } from 'react';
-import './normalize.css';
-import './App.css';
-import './animation.css';
-import Footer from './components/Footer';
-import Navigation from './components/Navigation';
-import Home from './components/Home';
-import About from './components/About';
-import Skills from './components/Skills';
-import Works from './components/Works';
-import Contact from './components/Contact';
+import React, { Component } from "react";
+import "./normalize.css";
+import "./App.css";
+import "./animation.css";
+import Navigation from "./components/Navigation";
+import Home from "./components/Home";
+import About from "./components/About";
+import Skills from "./components/Skills";
+import Works from "./components/Works";
+import Contact from "./components/Contact";
+import Sns from "./components/Sns";
+import Footer from "./components/Footer";
 
 export default class App extends Component {
-  render() {  
+  render() {
     return (
       <div className="wrapper" id="wrapper">
         <div className="container">
           <Navigation />
           <Home />
-          <About />
           <Works />
+          <About />
           <Skills />
-          <Contact />
+          <div className="col2">
+            <Contact />
+            <Sns />
+          </div>
           <Footer />
         </div>
       </div>
-    )
+    );
   }
 }
