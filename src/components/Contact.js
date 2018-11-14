@@ -10,13 +10,11 @@ const Contact = props => {
         travel for business meetings or skype. Please, make sure you’ve
         specified deadlines and budget for your project in your email. Thanks!
       </p>
-      <div className="contact__btnWrap">
-        <button className="contact__btn">
-          <a href="mailto:reiyoshizawa0418@gmail.com">
-            <i className="fas fa-at fa-2x" />
-          </a>
-        </button>
-      </div>
+      <button className="contact__btn">
+        <a href="mailto:reiyoshizawa0418@gmail.com" className="contact__anchor">
+          Contact me!
+        </a>
+      </button>
     </section>
   );
 };

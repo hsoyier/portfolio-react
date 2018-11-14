@@ -8,7 +8,7 @@ body {
 }
 
 img {
-  width: 100%;
+  max-width: 100%;
   height: auto;
 }
 
@@ -105,7 +105,7 @@ section {
 }
 
 .home {
-  padding: 6rem 0;
+  padding-top: 6rem;
 }
 
 .title {
@@ -153,11 +153,11 @@ section {
 
 .about {
   display: flex;
+  justify-content: space-between;
 }
 
 .about__profile {
-  flex: 1.8;
-  padding: 0 8rem 0 0;
+  width: 60%;
 }
 
 .profile__name {
@@ -184,25 +184,35 @@ section {
   margin-bottom: 1rem;
 }
 
-.about__img {
-  flex: 1;
+.skills__col2 {
+  display: flex;
+  justify-content: space-between;
 }
 
-/* .skills__list {
-  width: 90%;
-  height: auto;
-  margin: 0 auto;
-  margin-top: 3rem;
-  margin-bottom: 9rem;
+.skills__listBlock {
+  width: 45%;
+}
+
+.skills__title {
+  font-size: 2.4rem;
+  font-weight: bold;
 }
 
 .skills__list {
-  padding: 0;
+  /* width: 90%;
+  height: auto;
+  margin: 0 auto;
+  margin-top: 3rem;
+  margin-bottom: 9rem; */
+}
+
+.skills__list {
+  padding: 2rem 0;
   display: flex;
   list-style-type: none;
   flex-wrap: wrap;
   align-content: flex-start;
-} */
+}
 
 .skills__item {
   padding: 1rem;
@@ -219,12 +229,6 @@ section {
   height: auto;
 }
 
-.skills__title {
-  color: #333;
-  font-size: 0.9rem;
-  margin: 0;
-}
-
 .project__list {
   display: flex;
   justify-content: space-between;
@@ -238,6 +242,10 @@ section {
   width: 28%;
 }
 
+.project__itemWrap img {
+  margin-bottom: 3rem;
+}
+
 .project__title {
   font-size: 2.2rem;
   font-weight: bold;
@@ -246,6 +254,16 @@ section {
 
 .project__text {
   font-weight: 300;
+  margin-bottom: 1rem;
+}
+
+.project__skill {
+  background: #efefef;
+  padding: 1rem;
+  display: inline-block;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 10px;
 }
 
 .col2 {
@@ -278,7 +296,8 @@ section {
 }
 
 .sns__list {
-  padding: 0;
+  padding: 2rem 0;
+  display: flex;
 }
 
 .sns__header {
@@ -288,22 +307,35 @@ section {
 }
 
 .sns__list--item {
-  display: inline-block;
-}
-
-.sns__list--item i {
-  font-size: 1.5rem;
-  padding: 0 1rem;
+  width: 8%;
 }
 
 .sns__list--item a {
   color: #333;
 }
 
+.contact__text {
+  margin-bottom: 2rem;
+}
+
+.contact__btn {
+  padding: 0;
+  border: none;
+}
+
+.contact__anchor {
+  padding: 2rem 8rem;
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  background: #000;
+}
+
 .copyright {
-  font-size: 0.9rem;
+  font-size: 1.3rem;
   font-weight: 300;
   letter-spacing: 0.2em;
+  text-align: center;
 }
 
 @media screen and (max-width: 640px) {
