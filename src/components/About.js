@@ -18,23 +18,25 @@ const About = () => {
 
   return (
     <section id="about" className="about">
-      <div className="about__profile" id="about__profile">
-        <h2>About</h2>
-        <p className="profile__name">Rei Yoshizawa</p>
-        <p className="about__profile--text">
-          Hi, I'm Front-End developer with 2 years experiece. In the previous
-          job I worked for the clietns such as Honda, Nikon, Breitling and did
-          coding with gulp, sass, etc. Currently my passion is towards React
-          framework.
-        </p>
-        <p className="about__profile--text">
-          One of my strong point is never-giveup mind and curiousity for the new
-          technology and tools. My recent goal as develolper is to become a
-          full-stack developer so that I keep learning day by day.
-        </p>
-      </div>
-      <div className="about__img" id="about__img">
-        <img src={profile} alt="Rei Yoshizawa" />
+      <div className="about__inner">
+        <div className="about__profile" id="about__profile">
+          <h2>About</h2>
+          <p className="profile__name">Rei Yoshizawa</p>
+          <p className="about__profile--text">
+            Hi, I'm Front-End developer with 2 years experiece. In the previous
+            job I worked for the cliets such as Honda, Nikon, Breitling and did
+            coding with gulp, sass, etc. Currently my passion is towards React
+            framework.
+          </p>
+          <p className="about__profile--text">
+            One of my strong point is never-giveup mind and curiousity for the
+            new technology and tools. My recent goal as develolper is to become
+            a full-stack developer so that I keep learning day by day.
+          </p>
+        </div>
+        <div className="about__img" id="about__img">
+          <img src={profile} alt="Rei Yoshizawa" />
+        </div>
       </div>
     </section>
   );

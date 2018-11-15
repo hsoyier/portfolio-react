@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import "./normalize.css";
 import "./App.scss";
-import "./animation.css";
-import Navigation from "./components/Navigation";
+import "./animation.scss";
+import Header from "./components/Header";
 import Home from "./components/Home";
 import About from "./components/About";
 import Skills from "./components/Skills";
@@ -16,14 +16,16 @@ export default class App extends Component {
     return (
       <div className="wrapper" id="wrapper">
         <div className="container">
-          <Navigation />
+          <Header />
           <Home />
           <Works />
           <About />
           <Skills />
-          <div className="col2">
-            <Contact />
-            <Sns />
+          <div className="contactBlock">
+            <div className="contact__inner">
+              <Contact />
+              <Sns />
+            </div>
           </div>
           <Footer />
         </div>

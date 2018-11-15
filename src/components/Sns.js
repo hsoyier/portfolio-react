@@ -4,7 +4,7 @@ const Sns = () => {
   return (
     <section id="sns" className="sns">
       <h2>Follow Me</h2>
-      <p>
+      <p className="sns__text">
         Especially check out my GitHub account please. You will see how I love
         programming.
       </p>
