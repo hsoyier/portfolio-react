@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./normalize.css";
-import "./App.css";
+import "./App.scss";
 import "./animation.css";
 import Navigation from "./components/Navigation";
 import Home from "./components/Home";

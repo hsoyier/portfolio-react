@@ -8,7 +8,7 @@ const Works = () => {
       <ul className="project__list">
         <li className="project__item" id="project__item01">
           <div className="project__itemWrap">
-            <a href="test.reiyoshizawa.com">
+            <a className="project__anchor" href="test.reiyoshizawa.com">
               <img src={visual_translate} alt="visual translate" />
             </a>
             <p className="project__title">
@@ -19,15 +19,15 @@ const Works = () => {
             </p>
             <ul className="project__skillList">
               <li className="project__skill">React</li>
-              <li className="project__skill">Responsive Web Design</li>
               <li className="project__skill">Ajax</li>
               <li className="project__skill">Git</li>
+              <li className="project__skill">Responsive Web Design</li>
             </ul>
           </div>
         </li>
         <li className="project__item" id="project__item01">
           <div className="project__itemWrap">
-            <a href="test.reiyoshizawa.com">
+            <a className="project__anchor" href="test.reiyoshizawa.com">
               <img src={visual_translate} alt="visual translate" />
             </a>
             <p className="project__title">
@@ -38,16 +38,16 @@ const Works = () => {
             </p>
             <ul className="project__skillList">
               <li className="project__skill">React</li>
-              <li className="project__skill">Responsive Web Design</li>
               <li className="project__skill">Ajax</li>
               <li className="project__skill">Git</li>
+              <li className="project__skill">Responsive Web Design</li>
             </ul>
           </div>
         </li>
 
         <li className="project__item" id="project__item01">
           <div className="project__itemWrap">
-            <a href="test.reiyoshizawa.com">
+            <a className="project__anchor" href="test.reiyoshizawa.com">
               <img src={visual_translate} alt="visual translate" />
             </a>
             <p className="project__title">
@@ -58,9 +58,9 @@ const Works = () => {
             </p>
             <ul className="project__skillList">
               <li className="project__skill">React</li>
-              <li className="project__skill">Responsive Web Design</li>
               <li className="project__skill">Ajax</li>
               <li className="project__skill">Git</li>
+              <li className="project__skill">Responsive Web Design</li>
             </ul>
           </div>
         </li>

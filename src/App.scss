@@ -1,0 +1,338 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: -apple-system, "BlinkMacSystemFont", Sans-Serif;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+p,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  line-height: 3.4rem;
+}
+
+h2 {
+  font-size: 5rem;
+  padding: 0;
+  margin-bottom: 2.4rem;
+}
+
+ul {
+  list-style-type: none;
+}
+
+section {
+  margin-bottom: 15rem;
+}
+
+.container {
+  width: 1080px;
+  margin: 0 auto;
+  padding: 4rem 0;
+}
+
+.header {
+  display: flex;
+  .header__info {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    .logo {
+      background: rgb(189, 189, 189);
+      color: #fff;
+      font-weight: normal;
+      padding: 1.4rem 1rem;
+    }
+  }
+}
+
+.navList {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+  .navList__item {
+    text-align: right;
+    width: 100px;
+    a {
+      text-decoration: none;
+      color: #000;
+      position: relative;
+      padding-bottom: 0.4rem;
+      display: inline-block;
+    }
+    .navList__item a:after {
+      content: "";
+      position: absolute;
+      border-bottom: 1px solid black;
+      bottom: 0;
+      left: 0;
+      right: 100%;
+      transition: all 0.4s ease-out;
+    }
+    .navList__item a:hover:after {
+      right: 0;
+    }
+  }
+}
+
+.sns__header {
+  flex: 1;
+  text-align: right;
+}
+
+.home {
+  padding-top: 6rem;
+  .title {
+    text-align: left;
+    font-size: 4rem;
+    padding: 0;
+    margin-bottom: 3.4rem;
+    display: table-caption;
+    .title__name {
+      font-size: 3.5rem;
+    }
+    .title span {
+      position: relative;
+      display: inline-block;
+    }
+    .title span:after {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: black;
+    }
+    .title__position {
+      font-size: 8rem;
+      font-weight: 800;
+      letter-spacing: 1rem;
+      line-height: 8rem;
+    }
+  }
+  .title__detail {
+    width: 50%;
+    opacity: 0.8;
+  }
+}
+
+.about {
+  display: flex;
+  justify-content: space-between;
+  .about__profile {
+    width: 60%;
+    .profile__name {
+      font-size: 2.4rem;
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+    }
+    .about__profile--name {
+      font-size: 4rem;
+      font-weight: bold;
+      margin: 0;
+      margin-bottom: 2.4rem;
+    }
+    .about__profile--title {
+      font-size: 1.3rem;
+      font-weight: bold;
+      padding: 1rem 0;
+    }
+    .about__profile--text {
+      font-weight: 300;
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+.skills__col2 {
+  display: flex;
+  justify-content: space-between;
+  .skills__listBlock {
+    width: 45%;
+    .skills__title {
+      font-size: 2.4rem;
+      font-weight: bold;
+    }
+    .skills__list {
+      padding: 2rem 0;
+      display: flex;
+      list-style-type: none;
+      flex-wrap: wrap;
+      align-content: flex-start;
+      .skills__item {
+        padding: 1rem;
+        text-align: center;
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}
+
+.skills__icon {
+  margin: 0;
+}
+
+.skills__icon svg {
+  width: 50px;
+  height: auto;
+}
+
+.project__list {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  list-style-type: none;
+  margin-top: 4rem;
+  .project__item {
+    padding: 0;
+    width: 28%;
+    .project__anchor {
+      display: block;
+      margin-bottom: 2rem;
+      box-shadow: 3px 3px 8px grey;
+    }
+    .project__title {
+      font-size: 2.2rem;
+      font-weight: bold;
+      margin-bottom: 0.6rem;
+    }
+    .project__text {
+      font-weight: 300;
+      margin-bottom: 1rem;
+    }
+    .project__skill {
+      background: #efefef;
+      padding: 1rem 2rem;
+      display: inline-block;
+      margin-right: 1rem;
+      margin-bottom: 1rem;
+      border-radius: 8px;
+    }
+  }
+}
+
+.col2 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact {
+  width: 45%;
+  .contact__text {
+    margin: 0 auto;
+    margin-bottom: 2rem;
+  }
+  .contact__btn {
+    padding: 0;
+    border: none;
+    .contact__anchor {
+      padding: 2rem 8rem;
+      display: block;
+      color: #fff;
+      text-decoration: none;
+      background: #3eb594;
+      border-radius: 20px;
+    }
+  }
+}
+
+.sns {
+  width: 45%;
+  .sns__list {
+    padding: 2rem 0;
+    display: flex;
+    .sns__list--item {
+      width: 10%;
+      a {
+        color: #333;
+      }
+    }
+  }
+}
+
+.copyright {
+  font-size: 1.3rem;
+  font-weight: 300;
+  letter-spacing: 0.2em;
+  text-align: center;
+}
+
+@media screen and (max-width: 640px) {
+  .wrapper {
+    width: 100%;
+  }
+  .container {
+    margin-top: 10px;
+  }
+  .header {
+    display: block;
+    .header__info {
+      display: block;
+      width: 90%;
+      margin: 0 auto;
+      margin-bottom: 1.5rem;
+      .logo {
+        width: 30px;
+        height: 30px;
+        padding: 1rem;
+      }
+    }
+  }
+  .sns__header {
+    padding: 1rem 0;
+    justify-content: center;
+  }
+  .nav {
+    display: none;
+  }
+  .about {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 4rem;
+    .about__profile {
+      flex: none;
+      width: 100%;
+      padding: 0;
+      .about__profile--name {
+        line-height: 3.5rem;
+        font-size: 3rem;
+      }
+    }
+  }
+  .project {
+    h2 {
+      margin-bottom: 1rem;
+    }
+    .project__list {
+      display: block;
+    }
+  }
+  .contact {
+    .contact__text {
+      width: 90%;
+    }
+    .contact__btn {
+      background: none;
+    }
+  }
+}

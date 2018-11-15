@@ -12,7 +12,7 @@ const Contact = props => {
       </p>
       <button className="contact__btn">
         <a href="mailto:reiyoshizawa0418@gmail.com" className="contact__anchor">
-          Contact me!
+          Contact me
         </a>
       </button>
     </section>
