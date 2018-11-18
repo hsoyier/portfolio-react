@@ -5,7 +5,7 @@ const Work01 = props => {
   return (
     <div className="example" id="example1">
       <button onClick={props.closeModal}>
-        <i className="fas fa-times fa-2x" />
+        <i className="fas fa-times fa-3x" />
       </button>
       <h3>Tokyo Metropolitan Volunteerism Navigation Website</h3>
       <div className="example__inner">

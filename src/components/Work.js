@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Work01 from "./workExamples/Work01";
-import Work02 from "./workExamples/Work02";
-import Work03 from "./workExamples/Work03";
+import Work02 from "./workExamples/Work03";
+import Work03 from "./workExamples/Work02";
 
 class Work extends Component {
   state = {

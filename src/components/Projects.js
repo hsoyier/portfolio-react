@@ -39,7 +39,7 @@ class Projects extends Component {
           </Modal>
         </div>
         <div className="project__inner">
-          <h2>Visual Translate</h2>
+          <h2>Personal Projects</h2>
           <ul className="project__list">
             <li className="project__item" id="project__item01">
               <div className="project__itemWrap">
@@ -61,6 +61,7 @@ class Projects extends Component {
                 </div>
               </div>
             </li>
+
             <li className="project__item" id="project__item01">
               <div className="project__itemWrap">
                 <input
@@ -69,9 +70,9 @@ class Projects extends Component {
                   name="example02"
                   onClick={this.openModal}
                 />
-                <img src={project_example02} alt="Rei Yoshizawa Portfolio" />
+                <img src={project_example02} alt="Event Search" />
                 <div className="project__detailBox">
-                  <p className="project__title">Rei Yoshizawa Portfolio</p>
+                  <p className="project__title">Event Search</p>
                   <ul className="project__skillList">
                     <li className="project__skill">React</li>
                     <li className="project__skill">Ajax</li>
@@ -81,7 +82,6 @@ class Projects extends Component {
                 </div>
               </div>
             </li>
-
             <li className="project__item" id="project__item01">
               <div className="project__itemWrap">
                 <input
@@ -90,9 +90,9 @@ class Projects extends Component {
                   name="example03"
                   onClick={this.openModal}
                 />
-                <img src={project_example02} alt="Event Search" />
+                <img src={project_example02} alt="Rei Yoshizawa Portfolio" />
                 <div className="project__detailBox">
-                  <p className="project__title">Event Search</p>
+                  <p className="project__title">Rei Yoshizawa Portfolio</p>
                   <ul className="project__skillList">
                     <li className="project__skill">React</li>
                     <li className="project__skill">Ajax</li>

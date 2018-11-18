@@ -58,12 +58,6 @@ class Works extends Component {
                   <p className="project__title">
                     Tokyo Metropolitan Volunteerism Navigation Website
                   </p>
-                  <ul className="project__skillList">
-                    <li className="project__skill">React</li>
-                    <li className="project__skill">Ajax</li>
-                    <li className="project__skill">Git</li>
-                    <li className="project__skill">Responsive Web Design</li>
-                  </ul>
                 </div>
               </div>
             </li>
@@ -80,12 +74,6 @@ class Works extends Component {
                   <p className="project__title">
                     <a href="https://www.breitling.co.jp/">Breitling Japan</a>
                   </p>
-                  <ul className="project__skillList">
-                    <li className="project__skill">React</li>
-                    <li className="project__skill">Ajax</li>
-                    <li className="project__skill">Git</li>
-                    <li className="project__skill">Responsive Web Design</li>
-                  </ul>
                 </div>
               </div>
             </li>
@@ -101,12 +89,6 @@ class Works extends Component {
                 <img src={work_example03} alt="Honda Orange Dealer" />
                 <div className="project__detailBox">
                   <p className="project__title">Honda Orange Dealer</p>
-                  <ul className="project__skillList">
-                    <li className="project__skill">React</li>
-                    <li className="project__skill">Ajax</li>
-                    <li className="project__skill">Git</li>
-                    <li className="project__skill">Responsive Web Design</li>
-                  </ul>
                 </div>
               </div>
             </li>
