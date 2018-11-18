@@ -9,13 +9,13 @@ Modal.setAppElement("#root");
 class Works extends Component {
   state = {
     modalIsOpen: false,
-    workSample: ""
+    worksample: ""
   };
 
   openModal = e => {
     e.preventDefault();
-    const workSample = e.target.value;
-    this.setState({ modalIsOpen: true, workSample });
+    const worksample = e.target.value;
+    this.setState({ modalIsOpen: true, worksample });
   };
 
   closeModal = () => {
@@ -40,7 +40,7 @@ class Works extends Component {
           >
             <WorkSample1
               closeModal={this.closeModal}
-              workSample={this.state.workSample}
+              worksample={this.state.worksample}
             />
           </Modal>
         </div>
@@ -48,7 +48,11 @@ class Works extends Component {
           <h2>Works</h2>
           <ul className="project__list">
             <li className="project__item" id="project__item01">
-              <div className="project__itemWrap" onClick={this.openModal}>
+              <div
+                className="project__itemWrap"
+                onClick={this.openModal}
+                value="1"
+              >
                 <img src={visual_translate} alt="visual translate" />
                 <div className="project__detailBox">
                   <p className="project__title">
@@ -67,7 +71,12 @@ class Works extends Component {
             </li>
             <li className="project__item" id="project__item01">
               <div className="project__itemWrap">
-                <img src={visual_translate} alt="visual translate" />
+                <a
+                  className="project__anchor"
+                  href="https://www.honda.co.jp/orangedealer/orezou/"
+                >
+                  <img src={visual_translate} alt="visual translate" />
+                </a>
                 <div className="project__detailBox">
                   <p className="project__title">
                     <a href="https://www.honda.co.jp/orangedealer/orezou/https://www.honda.co.jp/orangedealer/orezou/">

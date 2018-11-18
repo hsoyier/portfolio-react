@@ -2,8 +2,7 @@ import React, { Component } from "react";
 
 class WorkSample1 extends Component {
   render() {
-    const sample = this.props.workSample;
-    console.log(sample);
+    const sample = this.props.worksample;
     if (sample === "1") {
       return <p>hey</p>;
     } else {
