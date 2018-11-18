@@ -6,7 +6,7 @@ import visual_translate from "../assets/visual_translate.png";
 // Make sure to bind modal to your appElement (http://reactcommunity.org/react-modal/accessibility/)
 Modal.setAppElement("#root");
 
-class Works extends Component {
+class Projects extends Component {
   state = {
     modalIsOpen: false,
     worksample: ""
@@ -40,7 +40,7 @@ class Works extends Component {
           </Modal>
         </div>
         <div className="project__inner">
-          <h2>Works</h2>
+          <h2>Personal Projects</h2>
           <ul className="project__list">
             <li className="project__item" id="project__item01">
               <div className="project__itemWrap">
@@ -119,4 +119,4 @@ class Works extends Component {
   }
 }
 
-export default Works;
+export default Projects;

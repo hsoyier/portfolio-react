@@ -1,10 +1,11 @@
 import React, { Component } from "react";
+import Work01 from "./workExamples/Work01";
 
 class WorkSample1 extends Component {
   render() {
     const sample = this.props.worksample;
     if (sample === "1") {
-      return <p>hey</p>;
+      return <Work01 />;
     } else {
       return (
         <div>
