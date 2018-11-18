@@ -24,11 +24,6 @@ const Sns = () => {
             <i className="fab fa-twitter-square fa-2x" />
           </a>
         </li>
-        <li className="sns__list--item">
-          <a href="https://www.instagram.com/reydejapon/?hl=ja">
-            <i className="fab fa-instagram fa-2x" />
-          </a>
-        </li>
       </ul>
     </section>
   );

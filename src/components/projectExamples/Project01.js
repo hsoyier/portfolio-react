@@ -1,13 +1,9 @@
 import React from "react";
-import work_example01 from "../../assets/work_example01.jpg";
 
-const Work01 = props => {
+const Project01 = () => {
   return (
     <div className="example" id="example1">
-      <button onClick={props.closeModal}>
-        <i className="fas fa-times fa-2x" />
-      </button>
-      <h3>Tokyo Metropolitan Volunteerism Navigation Website</h3>
+      <h3>work01</h3>
       <div className="example__inner">
         <div className="example__info">
           <p className="example__info__text">
@@ -18,18 +14,6 @@ const Work01 = props => {
             corporis, fugit, minus facere vitae sapiente rem rerum excepturi
             asperiores! Fugit, sint ipsum.
           </p>
-          <a
-            href="http://www.city-volunteer.metro.tokyo.jp/index.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Visit Web Site
-          </a>
-          <img
-            className="example__info__image"
-            src={work_example01}
-            alt="Tokyo Metropolitan Volunteerism Navigation Website"
-          />
         </div>
         <div className="example__detail">
           <ul className="example__list">
@@ -41,6 +25,14 @@ const Work01 = props => {
               <dt>What I used</dt>
               <dd>HTML5, CSS3, JavaScript</dd>
             </li>
+            <li className="example__list__item">
+              <a
+                href="              http://www.city-volunteer.metro.tokyo.jp/index.html
+"
+              >
+                Visit Web Site
+              </a>
+            </li>
           </ul>
         </div>
       </div>
@@ -48,4 +40,4 @@ const Work01 = props => {
   );
 };
 
-export default Work01;
+export default Project01;

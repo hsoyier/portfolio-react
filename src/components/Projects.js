@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import Modal from "react-modal";
-import WorkSample1 from "./WorkSample1";
-import visual_translate from "../assets/visual_translate.png";
+import Project from "./Project";
+import project_example01 from "../assets/project_example01.jpg";
+import project_example02 from "../assets/project_example02.jpg";
 
 // Make sure to bind modal to your appElement (http://reactcommunity.org/react-modal/accessibility/)
 Modal.setAppElement("#root");
@@ -9,14 +10,14 @@ Modal.setAppElement("#root");
 class Projects extends Component {
   state = {
     modalIsOpen: false,
-    worksample: ""
+    example: ""
   };
 
   openModal = e => {
     e.preventDefault();
-    const worksample = e.target.name;
-    console.log(worksample);
-    this.setState({ modalIsOpen: true, worksample });
+    console.log(e.target.value);
+    const example = e.target.name;
+    this.setState({ modalIsOpen: true, example });
   };
 
   closeModal = () => {
@@ -24,6 +25,7 @@ class Projects extends Component {
   };
 
   render() {
+    const { example } = this.state;
     return (
       <section id="projects" className="project">
         <div>
@@ -33,30 +35,23 @@ class Projects extends Component {
             onRequestClose={this.closeModal}
             contentLabel="Example Modal"
           >
-            <WorkSample1
-              closeModal={this.closeModal}
-              worksample={this.state.worksample}
-            />
+            <Project closeModal={this.closeModal} example={example} />
           </Modal>
         </div>
         <div className="project__inner">
-          <h2>Personal Projects</h2>
+          <h2>Visual Translate</h2>
           <ul className="project__list">
             <li className="project__item" id="project__item01">
               <div className="project__itemWrap">
                 <input
                   type="button"
                   className="project__anchor"
-                  name="1"
+                  name="example01"
                   onClick={this.openModal}
                 />
-                <img src={visual_translate} alt="visual translate" />
+                <img src={project_example01} alt="Visual Translate" />
                 <div className="project__detailBox">
-                  <p className="project__title">
-                    <a href="http://www.city-volunteer.metro.tokyo.jp/index.html">
-                      Tokyo Metropolitan Volunteerism Navigation Website
-                    </a>
-                  </p>
+                  <p className="project__title">Visual Translate</p>
                   <ul className="project__skillList">
                     <li className="project__skill">React</li>
                     <li className="project__skill">Ajax</li>
@@ -71,16 +66,12 @@ class Projects extends Component {
                 <input
                   type="button"
                   className="project__anchor"
-                  name="2"
+                  name="example02"
                   onClick={this.openModal}
                 />
-                <img src={visual_translate} alt="visual translate" />
+                <img src={project_example02} alt="Rei Yoshizawa Portfolio" />
                 <div className="project__detailBox">
-                  <p className="project__title">
-                    <a href="https://www.honda.co.jp/orangedealer/orezou/https://www.honda.co.jp/orangedealer/orezou/">
-                      Honda Orange Dealer
-                    </a>
-                  </p>
+                  <p className="project__title">Rei Yoshizawa Portfolio</p>
                   <ul className="project__skillList">
                     <li className="project__skill">React</li>
                     <li className="project__skill">Ajax</li>
@@ -90,19 +81,18 @@ class Projects extends Component {
                 </div>
               </div>
             </li>
+
             <li className="project__item" id="project__item01">
               <div className="project__itemWrap">
                 <input
                   type="button"
                   className="project__anchor"
-                  name="3"
+                  name="example03"
                   onClick={this.openModal}
                 />
-                <img src={visual_translate} alt="visual translate" />
+                <img src={project_example02} alt="Event Search" />
                 <div className="project__detailBox">
-                  <p className="project__title">
-                    <a href="https://www.breitling.co.jp/">Breitling Japan</a>
-                  </p>
+                  <p className="project__title">Event Search</p>
                   <ul className="project__skillList">
                     <li className="project__skill">React</li>
                     <li className="project__skill">Ajax</li>

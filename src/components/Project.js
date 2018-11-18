@@ -1,9 +1,10 @@
 import React, { Component } from "react";
 import Work01 from "./workExamples/Work01";
 
-class WorkSample1 extends Component {
+class Project extends Component {
   render() {
     const sample = this.props.worksample;
+    console.log(sample);
     if (sample === "1") {
       return <Work01 />;
     } else {
@@ -24,4 +25,4 @@ class WorkSample1 extends Component {
   }
 }
 
-export default WorkSample1;
+export default Project;
