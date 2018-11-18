@@ -10,17 +10,32 @@ const Sns = () => {
       </p>
       <ul className="sns__list">
         <li className="sns__list--item">
-          <a href="https://github.com/reiyoshizawa">
+          <a
+            className="github"
+            href="https://github.com/reiyoshizawa"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <i className="fab fa-github fa-2x" />
           </a>
         </li>
         <li className="sns__list--item">
-          <a href="https://www.linkedin.com/in/rei-yoshizawa-0a3322b6/">
+          <a
+            className="linkedin"
+            href="https://www.linkedin.com/in/rei-yoshizawa-0a3322b6/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <i className="fab fa-linkedin fa-2x" />
           </a>
         </li>
         <li className="sns__list--item">
-          <a href="https://twitter.com/ReiYoshizawa_?lang=ja">
+          <a
+            className="twitter"
+            href="https://twitter.com/ReiYoshizawa_?lang=ja"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <i className="fab fa-twitter-square fa-2x" />
           </a>
         </li>

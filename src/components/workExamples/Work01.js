@@ -1,7 +1,7 @@
 import React from "react";
 import work_example01 from "../../assets/work_example01.jpg";
 
-const Work01 = props => {
+const Work02 = props => {
   return (
     <div className="example" id="example1">
       <button onClick={props.closeModal}>
@@ -19,6 +19,7 @@ const Work01 = props => {
             asperiores! Fugit, sint ipsum.
           </p>
           <a
+            className="weblink"
             href="http://www.city-volunteer.metro.tokyo.jp/index.html"
             target="_blank"
             rel="noopener noreferrer"
@@ -48,4 +49,4 @@ const Work01 = props => {
   );
 };
 
-export default Work01;
+export default Work02;

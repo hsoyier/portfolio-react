@@ -18,13 +18,24 @@ const Project02 = props => {
             corporis, fugit, minus facere vitae sapiente rem rerum excepturi
             asperiores! Fugit, sint ipsum.
           </p>
-          <a
-            href="http://www.city-volunteer.metro.tokyo.jp/index.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Visit Web Site
-          </a>
+          <div className="example__info__anchor">
+            <a
+              className="webLink"
+              href="http://vancity-event/reiyoshizawa.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Visit Web Site
+            </a>
+            <a
+              className="githubLink"
+              href="https://github.com/reiyoshizawa/vancity-event"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Github
+            </a>
+          </div>
           <img
             className="example__info__image"
             src={project_example02}

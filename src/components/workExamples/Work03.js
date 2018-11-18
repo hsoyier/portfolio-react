@@ -1,13 +1,13 @@
 import React from "react";
-import work_example02 from "../../assets/work_example02.jpg";
+import work_example03 from "../../assets/work_example03.jpg";
 
-const Work02 = props => {
+const Work03 = props => {
   return (
     <div className="example" id="example1">
       <button onClick={props.closeModal}>
         <i className="fas fa-times fa-3x" />
       </button>
-      <h3>Breitling Japan</h3>
+      <h3>Honda Orange Dealer</h3>
       <div className="example__inner">
         <div className="example__info">
           <p className="example__info__text">
@@ -18,11 +18,18 @@ const Work02 = props => {
             corporis, fugit, minus facere vitae sapiente rem rerum excepturi
             asperiores! Fugit, sint ipsum.
           </p>
-          <a href="https://www.breitling.co.jp/">Visit Web Site</a>
+          <a
+            className="weblink"
+            href="https://www.honda.co.jp/orangedealer/orezou/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Visit Web Site
+          </a>
           <img
             className="example__info__image"
-            src={work_example02}
-            alt="Breitling Japan"
+            src={work_example03}
+            alt="Honda Orange Dealer"
           />
         </div>
         <div className="example__detail">
@@ -42,4 +49,4 @@ const Work02 = props => {
   );
 };
 
-export default Work02;
+export default Work03;
