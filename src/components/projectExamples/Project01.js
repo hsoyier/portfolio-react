@@ -7,16 +7,19 @@ const Project01 = props => {
       <button onClick={props.closeModal}>
         <i className="fas fa-times fa-3x" />
       </button>
-      <h3>Tokyo Metropolitan Volunteerism Navigation Website</h3>
+      <h3>Visual Translate</h3>
       <div className="example__inner">
         <div className="example__info">
           <p className="example__info__text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. At beatae
-            dolorum eum nostrum accusantium natus eveniet quidem, rerum aperiam
-            quod exercitationem ullam ut, nemo veritatis ex deleniti nisi. Id
-            blanditiis dolorum voluptate maxime! Modi, aspernatur omnis porro
-            corporis, fugit, minus facere vitae sapiente rem rerum excepturi
-            asperiores! Fugit, sint ipsum.
+            One of my own project. I designed and developed myself. In this web
+            site you can search the translated word for several languages and
+            also the giphy animations related to the searched word. Sometimes
+            people can't get enough understanding of the word even if the word
+            is translated for own language. This web site show not only the
+            images but also fun time looking at looping giphy animations. <br />
+            I choose React as framework. 2 different APIs, Google translation
+            API and Giphy API are applied. I focused on creating well organized
+            component structures.
           </p>
           <div className="example__info__anchor">
             <a
@@ -46,11 +49,14 @@ const Project01 = props => {
           <ul className="example__list">
             <li className="example__list__item">
               <dt>Charge</dt>
-              <dd>Front End Developer</dd>
+              <dd>Front End Developer, Designer</dd>
             </li>
             <li className="example__list__item">
               <dt>What I used</dt>
-              <dd>HTML5, CSS3, JavaScript</dd>
+              <dd>
+                HTML5, CSS3, JavaScript, React, Sass, BEM, Responsive Web
+                Design, Web API(Google Translate API, Giphy API)
+              </dd>
             </li>
           </ul>
         </div>

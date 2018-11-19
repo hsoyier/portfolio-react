@@ -5,8 +5,9 @@ const Sns = () => {
     <section id="sns" className="sns">
       <h2>Follow Me</h2>
       <p className="sns__text">
-        Especially check out my GitHub account please. You will see how I love
-        programming.
+        Check out my accounts. Especially my GitHub account please. You will see
+        how I love programming.
+        <span className="bold">(You will see I'm programming every day)</span>
       </p>
       <ul className="sns__list">
         <li className="sns__list--item">

@@ -16,6 +16,7 @@ body {
 img {
   max-width: 100%;
   height: auto;
+  display: block;
 }
 
 p,
@@ -34,7 +35,7 @@ dd {
 }
 
 p {
-  line-height: 3.4rem;
+  line-height: 3rem;
 }
 
 h2 {
@@ -47,6 +48,11 @@ h3 {
   font-size: 4rem;
 }
 
+.bold {
+  font-weight: bold;
+  padding: 0 0.6rem 0 0.6rem;
+}
+
 ul {
   list-style-type: none;
 }
@@ -56,7 +62,7 @@ a {
 }
 
 section {
-  margin-bottom: 15rem;
+  margin-bottom: 12rem;
 }
 
 .header {
@@ -106,11 +112,6 @@ section {
   }
 }
 
-.sns__header {
-  flex: 1;
-  text-align: right;
-}
-
 .home {
   background: $bg_main;
   &__inner {
@@ -132,19 +133,6 @@ section {
         letter-spacing: 1rem;
         line-height: 8rem;
       }
-    }
-    .title span {
-      position: relative;
-      display: inline-block;
-    }
-    .title span:after {
-      content: "";
-      position: absolute;
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      background: rgb(248, 248, 248);
     }
     .title__detail {
       width: 50%;
@@ -240,6 +228,7 @@ section {
       .project__item {
         padding: 0;
         width: 29%;
+        box-shadow: 4px 10px 8px #f4f4f4;
         .project__itemWrap {
           // box-shadow: 2px 4px 7px #d7efee;
           cursor: pointer;
@@ -256,20 +245,17 @@ section {
             height: 100%;
             position: absolute;
             outline: none;
-            min-height: 390px;
           }
-          img {
-            border: 2px solid #f3f3f3;
-            box-sizing: border-box;
+          .project__image:hover {
+            transform: translateX(3px);
           }
-          // .project__anchor[type="button"]:hover {
-          //   background: #333;
-          //   opacity: 0.8;
-          // }
           .project__detailBox {
-            padding: 2rem 0;
+            box-shadow: 4px 10px 10px #efefef;
+            padding: 2rem;
+            min-height: 100px;
             .project__title {
-              font-size: 2.2rem;
+              color: #333;
+              font-size: 1.8rem;
               font-weight: bold;
               margin-bottom: 1rem;
               a {
@@ -282,11 +268,12 @@ section {
             }
             .project__skill {
               background: #efefef;
-              padding: 1rem 2rem;
+              padding: 0.8rem 1rem;
               display: inline-block;
               margin-right: 1rem;
               margin-bottom: 1rem;
               border-radius: 8px;
+              color: #636469;
             }
           }
         }
@@ -306,6 +293,7 @@ section {
     background: none;
     border: none;
     cursor: pointer;
+    outline: none;
   }
   .example__inner {
     display: flex;
@@ -313,6 +301,9 @@ section {
     padding: 5rem 0;
     .example__info {
       width: 60%;
+      .example__info__text {
+        color: #636469;
+      }
       .example__info__anchor {
         display: flex;
         justify-content: space-between;
@@ -360,6 +351,8 @@ section {
           }
           dd {
             padding: 1rem 0;
+            color: #636469;
+            line-height: 2.6rem;
           }
         }
       }
@@ -442,8 +435,14 @@ section {
 }
 
 @media screen and (max-width: 640px) {
+  p {
+    line-height: 2.5rem;
+  }
+  h2 {
+    font-size: 3.2rem;
+  }
   section {
-    margin-bottom: 7rem;
+    margin-bottom: 6rem;
   }
   .wrapper {
     width: 100%;
@@ -520,7 +519,7 @@ section {
         display: block;
         .project__item {
           width: 100%;
-          margin-bottom: 5rem;
+          margin-bottom: 3rem;
         }
       }
     }
@@ -533,7 +532,11 @@ section {
         .skills__listBlock {
           width: 100%;
           .skills__list {
-            justify-content: space-between;
+            flex-wrap: wrap;
+            .skills__item {
+              width: 33%;
+              box-sizing: border-box;
+            }
           }
         }
       }
@@ -577,10 +580,26 @@ section {
       .example__info {
         width: 100%;
         order: 2;
+        .example__info__anchor {
+          display: block;
+          .webLink {
+            width: 100%;
+            padding: 2rem 0;
+          }
+          .githubLink {
+            width: 100%;
+            padding: 2rem 0;
+          }
+        }
       }
       .example__detail {
         width: 100%;
         order: 1;
+        .example__list {
+          .example__list__item {
+            margin-bottom: 2rem;
+          }
+        }
       }
     }
   }
@@ -592,26 +611,5 @@ section {
   .ReactModal__Content {
     left: 0 !important;
     right: 0 !important;
-  }
-  .example {
-    padding-top: 3rem;
-    button {
-      right: 10px;
-    }
-    .example__inner {
-      .example__detail {
-        .example__list {
-          .example__list__item {
-            margin-bottom: 2rem;
-          }
-        }
-      }
-      .example__info {
-        a {
-          width: 100%;
-          padding: 2rem 0;
-        }
-      }
-    }
   }
 }

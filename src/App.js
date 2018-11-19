@@ -11,11 +11,13 @@ import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Sns from "./components/Sns";
 import Footer from "./components/Footer";
+import Animation from "./components/Animation";
 
 export default class App extends Component {
   render() {
     return (
       <div className="wrapper" id="wrapper">
+        <Animation />;
         <div className="container">
           <Header />
           <Home />

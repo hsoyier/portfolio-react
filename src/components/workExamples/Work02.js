@@ -11,15 +11,14 @@ const Work02 = props => {
       <div className="example__inner">
         <div className="example__info">
           <p className="example__info__text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. At beatae
-            dolorum eum nostrum accusantium natus eveniet quidem, rerum aperiam
-            quod exercitationem ullam ut, nemo veritatis ex deleniti nisi. Id
-            blanditiis dolorum voluptate maxime! Modi, aspernatur omnis porro
-            corporis, fugit, minus facere vitae sapiente rem rerum excepturi
-            asperiores! Fugit, sint ipsum.
+            This is Breitling Japan official web site. I was in charge of
+            updating the pages when the event occurs or the new watch model are
+            released or other stuff related to Breitling. I was coding with
+            HTML, CSS, JavaScript(jQuery). Also I edited the photos using Adobe
+            Photoshop and sometimes Adobe After Effect.
           </p>
           <a
-            className="weblink"
+            className="webLink"
             href="https://www.breitling.co.jp/"
             target="_blank"
             rel="noopener noreferrer"
@@ -40,7 +39,9 @@ const Work02 = props => {
             </li>
             <li className="example__list__item">
               <dt>What I used</dt>
-              <dd>HTML5, CSS3, JavaScript</dd>
+              <dd>
+                HTML, CSS, JavaScript, Adobe Photoshop, Adobe After Effect
+              </dd>
             </li>
           </ul>
         </div>

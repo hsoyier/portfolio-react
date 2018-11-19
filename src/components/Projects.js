@@ -39,7 +39,7 @@ class Projects extends Component {
           </Modal>
         </div>
         <div className="project__inner">
-          <h2>Personal Projects</h2>
+          <h2 id="project__title">Personal Projects</h2>
           <ul className="project__list">
             <li className="project__item" id="project__item01">
               <div className="project__itemWrap">
@@ -52,17 +52,11 @@ class Projects extends Component {
                 <img src={project_example01} alt="Visual Translate" />
                 <div className="project__detailBox">
                   <p className="project__title">Visual Translate</p>
-                  <ul className="project__skillList">
-                    <li className="project__skill">React</li>
-                    <li className="project__skill">Ajax</li>
-                    <li className="project__skill">Git</li>
-                    <li className="project__skill">Responsive Web Design</li>
-                  </ul>
                 </div>
               </div>
             </li>
 
-            <li className="project__item" id="project__item01">
+            <li className="project__item" id="project__item02">
               <div className="project__itemWrap">
                 <input
                   type="button"
@@ -73,16 +67,10 @@ class Projects extends Component {
                 <img src={project_example02} alt="Event Search" />
                 <div className="project__detailBox">
                   <p className="project__title">Event Search</p>
-                  <ul className="project__skillList">
-                    <li className="project__skill">React</li>
-                    <li className="project__skill">Ajax</li>
-                    <li className="project__skill">Git</li>
-                    <li className="project__skill">Responsive Web Design</li>
-                  </ul>
                 </div>
               </div>
             </li>
-            <li className="project__item" id="project__item01">
+            <li className="project__item" id="project__item03">
               <div className="project__itemWrap">
                 <input
                   type="button"
@@ -93,12 +81,6 @@ class Projects extends Component {
                 <img src={project_example02} alt="Rei Yoshizawa Portfolio" />
                 <div className="project__detailBox">
                   <p className="project__title">Rei Yoshizawa Portfolio</p>
-                  <ul className="project__skillList">
-                    <li className="project__skill">React</li>
-                    <li className="project__skill">Ajax</li>
-                    <li className="project__skill">Git</li>
-                    <li className="project__skill">Responsive Web Design</li>
-                  </ul>
                 </div>
               </div>
             </li>

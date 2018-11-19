@@ -11,12 +11,9 @@ const Project02 = props => {
       <div className="example__inner">
         <div className="example__info">
           <p className="example__info__text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. At beatae
-            dolorum eum nostrum accusantium natus eveniet quidem, rerum aperiam
-            quod exercitationem ullam ut, nemo veritatis ex deleniti nisi. Id
-            blanditiis dolorum voluptate maxime! Modi, aspernatur omnis porro
-            corporis, fugit, minus facere vitae sapiente rem rerum excepturi
-            asperiores! Fugit, sint ipsum.
+            One of my own project. You can search the upcoming events in this
+            web site. I applied Eventbrite API. Wherener city or country you
+            search promptly It show the events near the searched word.
           </p>
           <div className="example__info__anchor">
             <a
@@ -46,11 +43,14 @@ const Project02 = props => {
           <ul className="example__list">
             <li className="example__list__item">
               <dt>Charge</dt>
-              <dd>Front End Developer</dd>
+              <dd>Front End Developer, Designer</dd>
             </li>
             <li className="example__list__item">
               <dt>What I used</dt>
-              <dd>HTML5, CSS3, JavaScript</dd>
+              <dd>
+                HTML5, CSS3, JavaScript, React, Sass, BEM, Bootstrap, Responsive
+                Web Design, Web API(Eventbrite API)
+              </dd>
             </li>
           </ul>
         </div>

@@ -11,15 +11,14 @@ const Work03 = props => {
       <div className="example__inner">
         <div className="example__info">
           <p className="example__info__text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. At beatae
-            dolorum eum nostrum accusantium natus eveniet quidem, rerum aperiam
-            quod exercitationem ullam ut, nemo veritatis ex deleniti nisi. Id
-            blanditiis dolorum voluptate maxime! Modi, aspernatur omnis porro
-            corporis, fugit, minus facere vitae sapiente rem rerum excepturi
-            asperiores! Fugit, sint ipsum.
+            Honda Orange Dealer is one of the featured page in Honda web site.
+            It's relesed to promote traffic safety campaign especially for the
+            children. The cute elephant is choosen as the charactor for
+            attracting the kids. I was in charge of coding with HTML, CSS,
+            JavaScript.
           </p>
           <a
-            className="weblink"
+            className="webLink"
             href="https://www.honda.co.jp/orangedealer/orezou/"
             target="_blank"
             rel="noopener noreferrer"
@@ -40,7 +39,7 @@ const Work03 = props => {
             </li>
             <li className="example__list__item">
               <dt>What I used</dt>
-              <dd>HTML5, CSS3, JavaScript</dd>
+              <dd>HTML, CSS, JavaScript</dd>
             </li>
           </ul>
         </div>

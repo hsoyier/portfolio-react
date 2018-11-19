@@ -11,12 +11,12 @@ const Project03 = props => {
       <div className="example__inner">
         <div className="example__info">
           <p className="example__info__text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. At beatae
-            dolorum eum nostrum accusantium natus eveniet quidem, rerum aperiam
-            quod exercitationem ullam ut, nemo veritatis ex deleniti nisi. Id
-            blanditiis dolorum voluptate maxime! Modi, aspernatur omnis porro
-            corporis, fugit, minus facere vitae sapiente rem rerum excepturi
-            asperiores! Fugit, sint ipsum.
+            One of my own project. I applied React framework for developing. At
+            first my main focus point was to make fast and simple, one page web
+            site. To make this web site more user-friendly I applied modal
+            function for works and personal projects part insted of link to the
+            another page. I also added some CSS3 animations to make more elegant
+            page.
           </p>
           <div className="example__info__anchor">
             <a
@@ -50,7 +50,9 @@ const Project03 = props => {
             </li>
             <li className="example__list__item">
               <dt>What I used</dt>
-              <dd>HTML5, CSS3, JavaScript</dd>
+              <dd>
+                HTML5, CSS3, JavaScript, React, Sass, BEM, Responsive Web Design
+              </dd>
             </li>
           </ul>
         </div>

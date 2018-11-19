@@ -40,9 +40,9 @@ class Works extends Component {
           </Modal>
         </div>
         <div className="project__inner">
-          <h2>Works</h2>
+          <h2 id="works__title">Works</h2>
           <ul className="project__list">
-            <li className="project__item" id="project__item01">
+            <li className="project__item" id="works__item01">
               <div className="project__itemWrap">
                 <input
                   type="button"
@@ -51,6 +51,7 @@ class Works extends Component {
                   onClick={this.openModal}
                 />
                 <img
+                  className="project__image"
                   src={work_example01}
                   alt="Tokyo Metropolitan Volunteerism Navigation Website"
                 />
@@ -61,7 +62,7 @@ class Works extends Component {
                 </div>
               </div>
             </li>
-            <li className="project__item" id="project__item01">
+            <li className="project__item" id="works__item02">
               <div className="project__itemWrap">
                 <input
                   type="button"
@@ -69,16 +70,18 @@ class Works extends Component {
                   name="example02"
                   onClick={this.openModal}
                 />
-                <img src={work_example02} alt="Breitling Japan" />
+                <img
+                  className="project__image"
+                  src={work_example02}
+                  alt="Breitling Japan"
+                />
                 <div className="project__detailBox">
-                  <p className="project__title">
-                    <a href="https://www.breitling.co.jp/">Breitling Japan</a>
-                  </p>
+                  <p className="project__title">Breitling Japan</p>
                 </div>
               </div>
             </li>
 
-            <li className="project__item" id="project__item01">
+            <li className="project__item" id="works__item03">
               <div className="project__itemWrap">
                 <input
                   type="button"
@@ -86,7 +89,11 @@ class Works extends Component {
                   name="example03"
                   onClick={this.openModal}
                 />
-                <img src={work_example03} alt="Honda Orange Dealer" />
+                <img
+                  className="project__image"
+                  src={work_example03}
+                  alt="Honda Orange Dealer"
+                />
                 <div className="project__detailBox">
                   <p className="project__title">Honda Orange Dealer</p>
                 </div>
