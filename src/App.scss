@@ -231,13 +231,10 @@ section {
       justify-content: space-between;
       padding: 0;
       list-style-type: none;
-      margin-top: 4rem;
       .project__item {
         padding: 0;
         width: 29%;
-        box-shadow: 4px 10px 8px #f4f4f4;
         .project__itemWrap {
-          // box-shadow: 2px 4px 7px #d7efee;
           cursor: pointer;
           position: relative;
           .project__anchor {
@@ -257,14 +254,14 @@ section {
             transform: translateX(3px);
           }
           .project__detailBox {
-            box-shadow: 4px 10px 10px #efefef;
-            padding: 2rem;
-            min-height: 100px;
+            padding: 3rem 0;
             .project__title {
+              text-align: center;
               color: #333;
-              font-size: 1.8rem;
+              font-size: 2.4rem;
               font-weight: bold;
               margin-bottom: 1rem;
+              line-height: 3.2rem;
               a {
                 color: #000;
               }
@@ -435,7 +432,7 @@ section {
   .footer__inner {
     width: $content_width;
     margin: 0 auto;
-    padding: 4rem 0;
+    padding: 2rem 0;
     .copyright {
       color: $text_color;
       font-size: 1.3rem;
@@ -451,6 +448,7 @@ section {
   }
   h2 {
     font-size: 3.2rem;
+    margin-bottom: 3rem;
   }
   section {
     margin-bottom: 6rem;
@@ -531,10 +529,16 @@ section {
         .project__item {
           width: 100%;
           margin-bottom: 3rem;
+          .project__itemWrap {
+            .project__detailBox {
+              min-height: 0;
+            }
+          }
         }
       }
     }
   }
+
   .skills {
     &__inner {
       width: 90%;
@@ -591,16 +595,16 @@ section {
       .example__info {
         width: 100%;
         order: 2;
+        .webLink {
+          width: 100%;
+          padding: 2rem 0;
+        }
+        .githubLink {
+          width: 100%;
+          padding: 2rem 0;
+        }
         .example__info__anchor {
           display: block;
-          .webLink {
-            width: 100%;
-            padding: 2rem 0;
-          }
-          .githubLink {
-            width: 100%;
-            padding: 2rem 0;
-          }
         }
       }
       .example__detail {
