@@ -18,9 +18,28 @@
   display: inline-block;
   position: relative;
   overflow: hidden;
-  // line-height: 1.2;
-  position: relative;
+}
+
+.introtext__color:after {
+  animation: 1s introblock forwards;
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #d7efee;
+}
+
+.introtext__color {
+  animation: 1s introtext forwards;
   display: inline-block;
+  position: relative;
+  overflow: hidden;
+}
+
+.up-easeIn {
+  animation: up-easeIn 1s ease-in-out 0.2s 1 normal forwards running;
 }
 
 @keyframes logo_popIn {
@@ -29,6 +48,15 @@
   }
   100% {
     transform: scale(1) translateY(0);
+  }
+}
+
+@keyframes up-easeIn {
+  0% {
+    transform: translateY(40px);
+  }
+  100% {
+    transform: translateY(0);
   }
 }
 

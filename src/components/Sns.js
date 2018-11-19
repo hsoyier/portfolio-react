@@ -3,13 +3,13 @@ import React from "react";
 const Sns = () => {
   return (
     <section id="sns" className="sns">
-      <h2>Follow Me</h2>
-      <p className="sns__text">
+      <h2 id="sns__title">Follow Me</h2>
+      <p className="sns__text" id="sns__text">
         Check out my accounts. Especially my GitHub account please. You will see
         how I love programming.
         <span className="bold">(You will see I'm programming every day)</span>
       </p>
-      <ul className="sns__list">
+      <ul className="sns__list" id="sns__list">
         <li className="sns__list--item">
           <a
             className="github"

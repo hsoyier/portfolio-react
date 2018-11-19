@@ -8,7 +8,7 @@ const Home = () => {
           <span className="title__name introtext">Hi, I'm Rei</span>
           <span className="title__position introtext">Front-End Developer</span>
         </h2>
-        <p className="title__detail">
+        <p className="title__detail up-easeIn">
           I'm Vancouver based Front-End Developer. Since I started my career as
           developer I've obsessed with most of the topic about tech. I'm so
           grateful to be a part of this

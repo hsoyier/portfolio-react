@@ -40,8 +40,8 @@ class Projects extends Component {
         </div>
         <div className="project__inner">
           <h2 id="project__title">Personal Projects</h2>
-          <ul className="project__list">
-            <li className="project__item" id="project__item01">
+          <ul className="project__list" id="project__list">
+            <li className="project__item">
               <div className="project__itemWrap">
                 <input
                   type="button"
@@ -56,7 +56,7 @@ class Projects extends Component {
               </div>
             </li>
 
-            <li className="project__item" id="project__item02">
+            <li className="project__item">
               <div className="project__itemWrap">
                 <input
                   type="button"
@@ -70,7 +70,7 @@ class Projects extends Component {
                 </div>
               </div>
             </li>
-            <li className="project__item" id="project__item03">
+            <li className="project__item">
               <div className="project__itemWrap">
                 <input
                   type="button"

@@ -41,8 +41,8 @@ class Works extends Component {
         </div>
         <div className="project__inner">
           <h2 id="works__title">Works</h2>
-          <ul className="project__list">
-            <li className="project__item" id="works__item01">
+          <ul className="project__list" id="works__list">
+            <li className="project__item">
               <div className="project__itemWrap">
                 <input
                   type="button"
@@ -62,7 +62,7 @@ class Works extends Component {
                 </div>
               </div>
             </li>
-            <li className="project__item" id="works__item02">
+            <li className="project__item">
               <div className="project__itemWrap">
                 <input
                   type="button"
@@ -81,7 +81,7 @@ class Works extends Component {
               </div>
             </li>
 
-            <li className="project__item" id="works__item03">
+            <li className="project__item">
               <div className="project__itemWrap">
                 <input
                   type="button"

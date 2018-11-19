@@ -17,7 +17,7 @@ export default class App extends Component {
   render() {
     return (
       <div className="wrapper" id="wrapper">
-        <Animation />;
+        <Animation />
         <div className="container">
           <Header />
           <Home />
