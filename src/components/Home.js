@@ -14,7 +14,7 @@ const Home = () => {
           grateful to be a part of this
           <span className="bold">wonderful and exciting</span>
           industory and hopefully I would make something creative and
-          inovational something to amaze the world soon.
+          inovational to amaze the world soon.
         </p>
       </div>
     </section>

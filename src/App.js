@@ -9,7 +9,6 @@ import Skills from "./components/Skills";
 import Works from "./components/Works";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
-import Sns from "./components/Sns";
 import Footer from "./components/Footer";
 import Animation from "./components/Animation";
 
@@ -25,12 +24,7 @@ export default class App extends Component {
           <Projects />
           <About />
           <Skills />
-          <div className="contactBlock">
-            <div className="contact__inner">
-              <Contact />
-              <Sns />
-            </div>
-          </div>
+          <Contact />
           <Footer />
         </div>
       </div>

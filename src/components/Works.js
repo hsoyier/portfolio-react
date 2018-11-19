@@ -28,17 +28,15 @@ class Works extends Component {
   render() {
     const { example } = this.state;
     return (
-      <section id="projects" className="project">
-        <div>
-          <Modal
-            isOpen={this.state.modalIsOpen}
-            onAfterOpen={this.afterOpenModal}
-            onRequestClose={this.closeModal}
-            contentLabel="Example Modal"
-          >
-            <Work closeModal={this.closeModal} example={example} />
-          </Modal>
-        </div>
+      <section className="project">
+        <Modal
+          isOpen={this.state.modalIsOpen}
+          onAfterOpen={this.afterOpenModal}
+          onRequestClose={this.closeModal}
+          contentLabel="Example Modal"
+        >
+          <Work closeModal={this.closeModal} example={example} />
+        </Modal>
         <div className="project__inner">
           <h2 id="works__title">Works</h2>
           <ul className="project__list" id="works__list">

@@ -2,8 +2,12 @@
   animation: logo_popIn 1s ease-in-out 0s 1 normal forwards running;
 }
 
+.project__anchor:hover {
+  animation: hover_dark 1s ease-in-out 0s 1 normal forwards running;
+}
+
 .introtext:after {
-  animation: 1s introblock forwards;
+  animation: introblock 1s ease-in-out 0s 1 normal forwards running;
   content: "";
   position: absolute;
   left: 0;
@@ -14,14 +18,14 @@
 }
 
 .introtext {
-  animation: 1s introtext forwards;
+  animation: introtext 1s ease-in-out 0s 1 normal backwards running;
   display: inline-block;
   position: relative;
   overflow: hidden;
 }
 
 .introtext__color:after {
-  animation: 1s introblock forwards;
+  animation: introblock 1s ease-in-out 0s 1 normal forwards running;
   content: "";
   position: absolute;
   left: 0;
@@ -32,7 +36,7 @@
 }
 
 .introtext__color {
-  animation: 1s introtext forwards;
+  animation: introtext 1s ease-in-out 0s 1 normal backwards running;
   display: inline-block;
   position: relative;
   overflow: hidden;
@@ -48,6 +52,17 @@
   }
   100% {
     transform: scale(1) translateY(0);
+  }
+}
+
+@keyframes hover_dark {
+  0% {
+    opacity: 0.1;
+    background: #000;
+  }
+  100% {
+    opacity: 0.4;
+    background: #000;
   }
 }
 
@@ -67,10 +82,6 @@
 
   51% {
     color: transparent;
-  }
-
-  52% {
-    color: black;
   }
 
   100% {

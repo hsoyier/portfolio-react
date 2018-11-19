@@ -29,15 +29,15 @@ class Animation extends Component {
         works__title.classList.add(animation_box_color);
         works__list.classList.add(animation_easeIn);
       }
-      if (scrollTop > 800) {
+      if (scrollTop > 700) {
         project__title.classList.add(animation_box_color);
         project__list.classList.add(animation_easeIn);
       }
-      if (scrollTop > 1700) {
+      if (scrollTop > 1600) {
         about__title.classList.add(animation_box);
         about__textBlock.classList.add(animation_easeIn);
       }
-      if (scrollTop > 2100) {
+      if (scrollTop > 2200) {
         skill__title.classList.add(animation_box_color);
         skills__col2.classList.add(animation_easeIn);
       }

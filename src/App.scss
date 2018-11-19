@@ -3,6 +3,9 @@ $text_color: #636469;
 $button_color: #afaaaa;
 $button_color_hover: #71bbb8;
 $content_width: 75%;
+$github_color: #4078c0;
+$linkedin_color: #0077b5;
+$twitter_color: #1da1f2;
 
 html {
   font-size: 62.5%;
@@ -151,11 +154,10 @@ section {
     display: flex;
     justify-content: space-between;
     .about__profile {
-      width: 60%;
       .profile__name {
         font-size: 2.4rem;
         font-weight: bold;
-        margin-bottom: 0.5rem;
+        margin-bottom: 1.5rem;
       }
       .about__profile--name {
         font-size: 4rem;
@@ -178,6 +180,11 @@ section {
 
 .about__textBlock {
   transform: translateY(50px);
+  display: flex;
+  justify-content: space-between;
+  .about__box {
+    width: 57%;
+  }
 }
 
 .skills {
@@ -223,7 +230,7 @@ section {
 
 .project {
   &__inner {
-    width: 1080px;
+    width: 75%;
     margin: 0 auto;
     .project__list {
       transform: translateY(50px);
@@ -250,9 +257,7 @@ section {
             position: absolute;
             outline: none;
           }
-          .project__image:hover {
-            transform: translateX(3px);
-          }
+
           .project__detailBox {
             padding: 3rem 0;
             .project__title {
@@ -364,63 +369,62 @@ section {
   }
 }
 
-.contactBlock {
-  .contact__inner {
+.contacts {
+  .inner {
     width: $content_width;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-  }
-}
-
-.contact {
-  width: 45%;
-  .contact__text {
-    margin: 0 auto;
-    margin-bottom: 2rem;
-    color: $text_color;
-    transform: translateY(50px);
-  }
-  .contact__btn {
-    padding: 0;
-    border: none;
-    transform: translateY(50px);
-    .contact__anchor {
-      padding: 2rem 8rem;
-      display: block;
-      color: #fff;
-      text-decoration: none;
-      background: $button_color;
-      &:hover {
+    .contact {
+      width: 45%;
+      .contact__text {
+        color: $text_color;
+      }
+      .contact__btn {
+        border: none;
+        background: none;
+        padding: 0;
+      }
+      .contact__btn a {
+        width: 170px;
+        height: auto;
+        text-align: center;
+        background: #afaaaa;
+        padding: 2rem 3rem;
+        display: block;
+        color: #fff;
+        text-decoration: none;
+        margin-top: 2rem;
+      }
+      .contact__btn a:hover {
         background: $button_color_hover;
       }
     }
-  }
-}
-
-.sns {
-  width: 45%;
-  .sns__text {
-    color: $text_color;
-    transform: translateY(50px);
-  }
-  .sns__list {
-    padding: 2rem 0;
-    display: flex;
-    transform: translateY(50px);
-    .sns__list--item {
-      width: 12%;
-      a {
-        color: #333;
+    .sns {
+      width: 45%;
+      .sns__text {
+        color: $text_color;
       }
-      .linkedin:hover {
-        color: #0077b5;
-      }
-      .github:hover {
-        color: #00405d;
-      }
-      .twitter:hover {
-        color: #55acee;
+      .sns__list {
+        display: flex;
+        justify-content: space-between;
+        width: 40%;
+        margin-top: 2rem;
+        .sns__list--item {
+          width: 10%;
+          a {
+            color: #333;
+          }
+          .github:hover {
+            color: $github_color;
+          }
+          .linkedin:hover {
+            color: $linkedin_color;
+          }
+          .twitter:hover {
+            color: $twitter_color;
+          }
+        }
       }
     }
   }
@@ -448,11 +452,13 @@ section {
   }
   h2 {
     font-size: 3.2rem;
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
   }
+
   section {
-    margin-bottom: 6rem;
+    margin-bottom: 8rem;
   }
+
   .wrapper {
     width: 100%;
     overflow: hidden;
@@ -492,14 +498,12 @@ section {
       }
     }
   }
-  .sns__header {
-    padding: 1rem 0;
-    justify-content: center;
-  }
+
   .nav {
     display: none;
   }
   .about {
+    padding: 6rem 0;
     &__inner {
       width: 90%;
       display: block;
@@ -518,12 +522,23 @@ section {
       }
     }
   }
+
+  .about__textBlock {
+    display: block;
+    .about__box {
+      width: 100%;
+    }
+  }
+
+  .about__inner {
+    .about__img {
+      margin-top: 4rem;
+    }
+  }
+
   .project {
     &__inner {
       width: 90%;
-      h2 {
-        margin-bottom: 1rem;
-      }
       .project__list {
         display: block;
         .project__item {
@@ -557,24 +572,7 @@ section {
       }
     }
   }
-  .contactBlock {
-    .contact__inner {
-      width: 90%;
-      display: block;
-    }
-  }
-  .contact {
-    width: 100%;
-    .contact__btn {
-      width: 100%;
-    }
-  }
-  .sns {
-    width: 100%;
-    &__list {
-      justify-content: space-around;
-    }
-  }
+
   .footer {
     &__inner {
       width: 100%;
@@ -619,6 +617,11 @@ section {
     }
   }
 
+  h2 {
+    font-size: 4rem;
+    margin-bottom: 3rem;
+  }
+
   h3 {
     padding: 2rem 0;
   }
@@ -626,5 +629,35 @@ section {
   .ReactModal__Content {
     left: 0 !important;
     right: 0 !important;
+  }
+
+  .contacts {
+    .inner {
+      width: 90%;
+      display: block;
+      .contact {
+        width: 100%;
+        .contact__btn {
+          width: 100%;
+          a {
+            width: 100%;
+            padding: 2rem 0;
+          }
+        }
+      }
+      .sns {
+        width: 100%;
+      }
+    }
+  }
+
+  .about__textBlock {
+    transform: none;
+  }
+  .skills__inner .skills__col2 {
+    transform: none;
+  }
+  .project__inner .project__list {
+    transform: none;
   }
 }
