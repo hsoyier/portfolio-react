@@ -1,5 +1,5 @@
 import React from "react";
-import project_example02 from "../../assets/project_example02.jpg";
+import project_example03 from "../../assets/project_example03.jpg";
 
 const Project03 = props => {
   return (
@@ -38,7 +38,7 @@ const Project03 = props => {
           </div>
           <img
             className="example__info__image"
-            src={project_example02}
+            src={project_example03}
             alt="Rei Yoshizawa Portfolio"
           />
         </div>

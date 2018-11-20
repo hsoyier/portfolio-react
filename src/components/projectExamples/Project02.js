@@ -7,7 +7,7 @@ const Project02 = props => {
       <button onClick={props.closeModal}>
         <i className="fas fa-times fa-3x" />
       </button>
-      <h3>Event Search</h3>
+      <h3>Joyevent</h3>
       <div className="example__inner">
         <div className="example__info">
           <p className="example__info__text">
@@ -36,7 +36,7 @@ const Project02 = props => {
           <img
             className="example__info__image"
             src={project_example02}
-            alt="Event Search"
+            alt="Joyevent"
           />
         </div>
         <div className="example__detail">

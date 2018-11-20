@@ -3,6 +3,7 @@ import Modal from "react-modal";
 import Project from "./Project";
 import project_example01 from "../assets/project_example01.jpg";
 import project_example02 from "../assets/project_example02.jpg";
+import project_example03 from "../assets/project_example03.jpg";
 
 // Make sure to bind modal to your appElement (http://reactcommunity.org/react-modal/accessibility/)
 Modal.setAppElement("#root");
@@ -64,9 +65,9 @@ class Projects extends Component {
                   name="example02"
                   onClick={this.openModal}
                 />
-                <img src={project_example02} alt="Event Search" />
+                <img src={project_example02} alt="Joyevent" />
                 <div className="project__detailBox">
-                  <p className="project__title">Event Search</p>
+                  <p className="project__title">Joyevent</p>
                 </div>
               </div>
             </li>
@@ -78,7 +79,7 @@ class Projects extends Component {
                   name="example03"
                   onClick={this.openModal}
                 />
-                <img src={project_example02} alt="Rei Yoshizawa Portfolio" />
+                <img src={project_example03} alt="Rei Yoshizawa Portfolio" />
                 <div className="project__detailBox">
                   <p className="project__title">Rei Yoshizawa Portfolio</p>
                 </div>
