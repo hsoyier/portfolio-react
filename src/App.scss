@@ -186,6 +186,9 @@ section {
   .about__box {
     width: 57%;
   }
+  .about__img {
+    width: 30%;
+  }
 }
 
 .skills {
@@ -519,6 +522,7 @@ section {
         }
       }
       .about__img {
+        width: 100%;
         text-align: center;
       }
     }

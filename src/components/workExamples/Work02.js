@@ -11,10 +11,10 @@ const Work02 = props => {
       <div className="example__inner">
         <div className="example__info">
           <p className="example__info__text">
-            This is Breitling Japan official web site. I was in charge of
-            updating the pages when the event occurs or the new watch model are
+            This is Breitling Japan official website. I was in charge of
+            updating the pages when the event occurs or the new watch model is
             released or other stuff related to Breitling. I was coding with
-            HTML, CSS, JavaScript(jQuery). Also I edited the photos using Adobe
+            HTML, CSS, JavaScript(jQuery). Also, I edited the photos using Adobe
             Photoshop and sometimes Adobe After Effect.
           </p>
           <a

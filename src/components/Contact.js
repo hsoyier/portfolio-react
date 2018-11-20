@@ -4,7 +4,7 @@ const Contact = props => {
   return (
     <div className="contacts">
       <div className="inner">
-        <section className="contact">
+        <section className="contact" id="contact">
           <h2 id="contact__title">Contact</h2>
           <p className="contact__text" id="contact__text">
             Don’t hesitate to contact me if you want to know more about What I
@@ -23,8 +23,8 @@ const Contact = props => {
         <section className="sns">
           <h2 id="sns__title">Follow Me</h2>
           <p className="sns__text" id="sns__text">
-            Check out my accounts. Especially my GitHub account please. You will
-            see how I love programming.
+            Check out my accounts. Especially my GitHub account, please. You
+            will see how I love programming.
             <span className="bold">
               (You will see I'm programming every day)
             </span>
@@ -33,7 +33,7 @@ const Contact = props => {
             <li className="sns__list--item">
               <a
                 className="github"
-                href="https://github.com/reiyoshizawa"
+                href="https://github.com/oyyer"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -53,7 +53,7 @@ const Contact = props => {
             <li className="sns__list--item">
               <a
                 className="twitter"
-                href="https://twitter.com/ReiYoshizawa_?lang=ja"
+                href="https://twitter.com/oyyer_"
                 target="_blank"
                 rel="noopener noreferrer"
               >

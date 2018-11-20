@@ -11,14 +11,14 @@ const About = () => {
             <div className="about__box">
               <p className="profile__name">Rei Yoshizawa</p>
               <p className="about__profile--text">
-                Hi, I'm Front-End developer with 3+ years experiece. In the
-                previous job I worked for the cliets such as Honda, Nikon,
+                Hi, I'm a Front-End developer with 3+ years experience. In the
+                previous job, I worked for the clients such as Honda, Nikon,
                 Breitling. I'm really passionate about programming.
               </p>
               <p className="about__profile--text">
-                One of my strong point is never-giveup mind and
-                <span className="bold">curiousity for the new technology</span>
-                and tools. My recent goal as develolper is to become a
+                One of my strong points is never-give-up mind and
+                <span className="bold">curiosity for the new technology</span>
+                and tools. My recent goal as the developer is to become a
                 full-stack developer so that I keep learning day by day.
               </p>
             </div>

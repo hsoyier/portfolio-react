@@ -9,12 +9,12 @@ const Home = () => {
           <span className="title__position introtext">Front-End Developer</span>
         </h2>
         <p className="title__detail up-easeIn">
-          I'm Vancouver based Front-End Developer. Since I started my career as
-          developer I've obsessed with most of the topic about tech. I'm so
-          grateful to be a part of this
-          <span className="bold">wonderful and exciting</span>
-          industory and hopefully I would make something creative and
-          inovational to amaze the world soon.
+          I'm a Vancouver based Front-End Developer. Since I started my career
+          as the developer I've obsessed with most of the topic about tech. I'm
+          so grateful to be a part of this
+          <span className="bold">wonderful and exciting industry</span>and
+          hopefully, I would make something creative and innovational to amaze
+          the world soon.
         </p>
       </div>
     </section>

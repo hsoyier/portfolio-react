@@ -12,11 +12,11 @@ const Project03 = props => {
         <div className="example__info">
           <p className="example__info__text">
             One of my own project. I applied React framework for developing. At
-            first my main focus point was to make fast and simple, one page web
-            site. To make this web site more user-friendly I applied modal
-            function for works and personal projects part insted of link to the
-            another page. I also added some CSS3 animations to make more elegant
-            page.
+            first, my main focus point was to make fast and simple, one-page
+            website. To make this website more user-friendly I applied modal
+            function for works and personal projects part instead of a link to
+            another page. I also added some CSS3 animations to make a more
+            elegant page.
           </p>
           <div className="example__info__anchor">
             <a
@@ -29,7 +29,7 @@ const Project03 = props => {
             </a>
             <a
               className="githubLink"
-              href="https://github.com/reiyoshizawa/portfolio-react"
+              href="https://github.com/oyyer/portfolio-react"
               target="_blank"
               rel="noopener noreferrer"
             >

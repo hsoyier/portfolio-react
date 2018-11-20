@@ -11,14 +11,14 @@ const Project02 = props => {
       <div className="example__inner">
         <div className="example__info">
           <p className="example__info__text">
-            One of my own project. You can search the upcoming events in this
-            web site. I applied Eventbrite API. Wherener city or country you
-            search promptly It show the events near the searched word.
+            One of my own project. You can search the upcoming events on this
+            website. I applied Eventbrite API. Wherever city or country you
+            search promptly It shows the events near the searched word.
           </p>
           <div className="example__info__anchor">
             <a
               className="webLink"
-              href="http://vancity-event/reiyoshizawa.com/"
+              href="http://joyevent/reiyoshizawa.com/"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -26,7 +26,7 @@ const Project02 = props => {
             </a>
             <a
               className="githubLink"
-              href="https://github.com/reiyoshizawa/vancity-event"
+              href="https://github.com/oyyer/joyevent"
               target="_blank"
               rel="noopener noreferrer"
             >

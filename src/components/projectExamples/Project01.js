@@ -11,14 +11,14 @@ const Project01 = props => {
       <div className="example__inner">
         <div className="example__info">
           <p className="example__info__text">
-            One of my own project. I designed and developed myself. In this web
-            site you can search the translated word for several languages and
-            also the giphy animations related to the searched word. Sometimes
-            people can't get enough understanding of the word even if the word
-            is translated for own language. This web site show not only the
-            images but also fun time looking at looping giphy animations. <br />
-            I choose React as framework. 2 different APIs, Google translation
-            API and Giphy API are applied. I focused on creating well organized
+            One of my own project. I designed and developed myself. In this
+            website, you can search the translated word for several languages
+            and also the giphy animations related to the searched word.
+            Sometimes people can't get enough understanding of the word even if
+            the word is translated for own language. This website show not only
+            the images but also fun time looking at looping giphy animations. I
+            choose to React as a framework. 2 different APIs, Google translation
+            API, and Giphy API are applied. I focused on creating well-organized
             component structures.
           </p>
           <div className="example__info__anchor">
@@ -32,7 +32,7 @@ const Project01 = props => {
             </a>
             <a
               className="githubLink"
-              href="https://github.com/reiyoshizawa/visual-translate"
+              href="https://github.com/oyyer/visual-translate"
               target="_blank"
               rel="noopener noreferrer"
             >

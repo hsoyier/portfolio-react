@@ -11,13 +11,13 @@ const Work02 = props => {
       <div className="example__inner">
         <div className="example__info">
           <p className="example__info__text">
-            The web site is to promote the volunteers for the upcoming Tokyo
-            2020 olympic. In Japan volunteering culture is not spreaded and not
-            so common so that this web site is released. I was in charge of
-            updating the web site when they add new topics. Mainly I was coding
-            with HTML5, CSS3, JavaScript also utilized gulp, sass as local
-            development enviorment. In addition I edited some of the design work
-            using Adobe Photoshop.
+            The website is to promote the volunteers for the upcoming Tokyo 2020
+            Olympic. In Japan volunteering culture is not spread and not so
+            common so that this website is released. I was in charge of updating
+            the website when they add new topics. Mainly I was coding with
+            HTML5, CSS3, JavaScript also utilized gulp, sass as a local
+            development environment. In addition, I edited some of the design
+            work using Adobe Photoshop.
           </p>
           <a
             className="webLink"

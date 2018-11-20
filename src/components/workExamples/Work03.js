@@ -11,9 +11,9 @@ const Work03 = props => {
       <div className="example__inner">
         <div className="example__info">
           <p className="example__info__text">
-            Honda Orange Dealer is one of the featured page in Honda web site.
-            It's relesed to promote traffic safety campaign especially for the
-            children. The cute elephant is choosen as the charactor for
+            Honda Orange Dealer is one of the featured pages in Honda web site.
+            It's released to promote traffic safety campaign, especially for the
+            children. The cute elephant is chosen as the character for
             attracting the kids. I was in charge of coding with HTML, CSS,
             JavaScript.
           </p>
