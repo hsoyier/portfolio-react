@@ -18,11 +18,11 @@ const Project02 = props => {
           <div className="example__info__anchor">
             <a
               className="webLink"
-              href="http://joyevent/reiyoshizawa.com/"
+              href="https://joyevent.reiyoshizawa.com/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              Visit Web Site
+              Visit Website
             </a>
             <a
               className="githubLink"
@@ -30,6 +30,7 @@ const Project02 = props => {
               target="_blank"
               rel="noopener noreferrer"
             >
+              <i className="fab fa-github fa-lg" />
               Github
             </a>
           </div>

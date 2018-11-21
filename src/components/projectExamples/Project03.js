@@ -25,7 +25,7 @@ const Project03 = props => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Visit Web Site
+              Visit Website
             </a>
             <a
               className="githubLink"
@@ -33,6 +33,7 @@ const Project03 = props => {
               target="_blank"
               rel="noopener noreferrer"
             >
+              <i className="fab fa-github fa-lg" />
               Github
             </a>
           </div>

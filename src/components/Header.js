@@ -18,7 +18,7 @@ const Header = () => {
               </a>
             </li>
             <li className="navList__item navList__item02">
-              <a className="introtext" href="#projects">
+              <a className="introtext" href="#works">
                 Works
               </a>
             </li>

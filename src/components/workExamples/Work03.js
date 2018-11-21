@@ -23,7 +23,7 @@ const Work03 = props => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Visit Web Site
+            Visit Website
           </a>
           <img
             className="example__info__image"

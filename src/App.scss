@@ -80,6 +80,12 @@ section {
   margin-bottom: 12rem;
 }
 
+.githubLink {
+  i {
+    margin-right: 1.4rem;
+  }
+}
+
 .header {
   background: $bg_main;
   &__inner {
