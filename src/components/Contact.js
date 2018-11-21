@@ -1,4 +1,5 @@
 import React from "react";
+import resume from "../assets/reiyoshizawa_resume.pdf";
 
 const Contact = props => {
   return (
@@ -22,7 +23,7 @@ const Contact = props => {
             </button>
             <button className="contact__btn" id="contact__btn">
               <a
-                href="../assets/reiyoshizawa_resume.pdf"
+                href={resume}
                 download="reiyoshizawa_resume"
                 className="resume"
               >
