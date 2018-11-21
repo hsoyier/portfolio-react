@@ -23,21 +23,21 @@ const About = () => {
               </p>
               <p className="about__profile--text">
                 In the meantime, I like watching
-                <a href="https://www.youtube.com/channel/UCO1cgjhGzsSYb1rsB4bFe4Q">
-                  Fun Fun Function
-                </a>
-                and
                 <a href="https://www.youtube.com/channel/UCnUYZLuoy1rq1aVMwx4aTzw">
                   Google Chrome Developers,
                 </a>
                 <a href="https://www.youtube.com/channel/UCzoVCacndDCfGDf41P-z0iA">
                   JSConf,
                 </a>
+                <a href="https://www.youtube.com/channel/UCO1cgjhGzsSYb1rsB4bFe4Q">
+                  Fun Fun Function
+                </a>
                 <a href="https://www.youtube.com/channel/UC29ju8bIPH5as8OGnQzwJyA">
                   Traversy Media
                 </a>
                 etc in YouTube. My daily routine is to check Medium articles
-                about programming, Github Blog etc to catch up the trend.
+                about programming and some tech company's blogs to catch up the
+                trend.
               </p>
             </div>
             <div className="about__img">

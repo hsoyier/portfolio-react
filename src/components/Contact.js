@@ -11,22 +11,25 @@ const Contact = props => {
             do. I am currently based in Vancouver. Please contact me whenever
             you want, Thanks!
           </p>
-          <button className="contact__btn" id="contact__btn">
-            <a
-              href="mailto:reiyoshizawa0418@gmail.com"
-              className="contact__anchor"
-            >
-              Contact me
-            </a>
-          </button>
-          <button className="contact__btn" id="contact__btn">
-            <a
-              href="mailto:reiyoshizawa0418@gmail.com"
-              className="contact__anchor"
-            >
-              Resume
-            </a>
-          </button>
+          <div className="contact__btnBlock" id="contact__btnBlock">
+            <button className="contact__btn" id="contact__btn">
+              <a
+                href="mailto:reiyoshizawa0418@gmail.com"
+                className="contact__anchor"
+              >
+                Contact me
+              </a>
+            </button>
+            <button className="contact__btn" id="contact__btn">
+              <a
+                href="../assets/reiyoshizawa_resume.pdf"
+                download="reiyoshizawa_resume"
+                className="resume"
+              >
+                Resume
+              </a>
+            </button>
+          </div>
         </section>
         <section className="sns">
           <h2 id="sns__title">Follow Me</h2>

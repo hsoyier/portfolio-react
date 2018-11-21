@@ -22,7 +22,7 @@ class Animation extends Component {
       const sns__title = document.getElementById("sns__title");
       const contact__text = document.getElementById("contact__text");
       const sns__text = document.getElementById("sns__text");
-      const contact__btn = document.getElementById("contact__btn");
+      const contact__btnBlock = document.getElementById("contact__btnBlock");
       const sns__list = document.getElementById("sns__list");
 
       if (scrollTop > works__offsetTop - 100) {
@@ -46,7 +46,7 @@ class Animation extends Component {
         sns__title.classList.add(animation_box_color);
         contact__text.classList.add(animation_easeIn);
         sns__text.classList.add(animation_easeIn);
-        contact__btn.classList.add(animation_easeIn);
+        contact__btnBlock.classList.add(animation_easeIn);
         sns__list.classList.add(animation_easeIn);
       }
     });

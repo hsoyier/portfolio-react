@@ -1,5 +1,6 @@
 $bg_main: #d7efee;
 $text_color: #636469;
+$link_color: #018f69;
 $button_color: #afaaaa;
 $button_color_hover: #71bbb8;
 $content_width: 75%;
@@ -20,6 +21,16 @@ img {
   width: 100%;
   height: auto;
   display: block;
+}
+
+a {
+  color: $link_color;
+  font-weight: 700;
+  margin: 0 0.5rem;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 p,
@@ -384,25 +395,6 @@ section {
       .contact__text {
         color: $text_color;
       }
-      .contact__btn {
-        border: none;
-        background: none;
-        padding: 0;
-      }
-      .contact__btn a {
-        width: 170px;
-        height: auto;
-        text-align: center;
-        background: #afaaaa;
-        padding: 2rem 3rem;
-        display: block;
-        color: #fff;
-        text-decoration: none;
-        margin-top: 2rem;
-      }
-      .contact__btn a:hover {
-        background: $button_color_hover;
-      }
     }
     .sns {
       width: 45%;
@@ -431,6 +423,34 @@ section {
         }
       }
     }
+  }
+}
+
+.contact__btnBlock {
+  display: flex;
+  justify-content: space-between;
+  .contact__btn {
+    border: none;
+    background: none;
+    padding: 0;
+  }
+  .contact__btn a {
+    margin: 0;
+    width: 170px;
+    height: auto;
+    text-align: center;
+    background: #afaaaa;
+    padding: 2rem 3rem;
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    margin-top: 2rem;
+  }
+  .contact__btn a:hover {
+    background: $button_color_hover;
+  }
+  .contact__btn .resume:hover {
+    background: #d582b2;
   }
 }
 
@@ -655,6 +675,10 @@ section {
         width: 100%;
       }
     }
+  }
+
+  .contact__btnBlock {
+    display: block;
   }
 
   .about__textBlock {
