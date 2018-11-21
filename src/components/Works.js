@@ -28,7 +28,7 @@ class Works extends Component {
   render() {
     const { example } = this.state;
     return (
-      <section className="project">
+      <section id="works" className="project">
         <Modal
           isOpen={this.state.modalIsOpen}
           onAfterOpen={this.afterOpenModal}
@@ -78,7 +78,6 @@ class Works extends Component {
                 </div>
               </div>
             </li>
-
             <li className="project__item">
               <div className="project__itemWrap">
                 <input
@@ -90,10 +89,10 @@ class Works extends Component {
                 <img
                   className="project__image"
                   src={work_example03}
-                  alt="Honda Orange Dealer"
+                  alt="JADA Education Package"
                 />
                 <div className="project__detailBox">
-                  <p className="project__title">Honda Orange Dealer</p>
+                  <p className="project__title">JADA Education Package</p>
                 </div>
               </div>
             </li>

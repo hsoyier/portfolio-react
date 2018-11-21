@@ -23,16 +23,32 @@ const About = () => {
               </p>
               <p className="about__profile--text">
                 In the meantime, I like watching
-                <a href="https://www.youtube.com/channel/UCnUYZLuoy1rq1aVMwx4aTzw">
+                <a
+                  href="https://www.youtube.com/channel/UCnUYZLuoy1rq1aVMwx4aTzw"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   Google Chrome Developers,
                 </a>
-                <a href="https://www.youtube.com/channel/UCzoVCacndDCfGDf41P-z0iA">
+                <a
+                  href="https://www.youtube.com/channel/UCzoVCacndDCfGDf41P-z0iA"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   JSConf,
                 </a>
-                <a href="https://www.youtube.com/channel/UCO1cgjhGzsSYb1rsB4bFe4Q">
+                <a
+                  href="https://www.youtube.com/channel/UCO1cgjhGzsSYb1rsB4bFe4Q"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   Fun Fun Function
                 </a>
-                <a href="https://www.youtube.com/channel/UC29ju8bIPH5as8OGnQzwJyA">
+                <a
+                  href="https://www.youtube.com/channel/UC29ju8bIPH5as8OGnQzwJyA"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   Traversy Media
                 </a>
                 etc in YouTube. My daily routine is to check Medium articles
