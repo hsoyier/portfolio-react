@@ -19,6 +19,14 @@ const Contact = props => {
               Contact me
             </a>
           </button>
+          <button className="contact__btn" id="contact__btn">
+            <a
+              href="mailto:reiyoshizawa0418@gmail.com"
+              className="contact__anchor"
+            >
+              Resume
+            </a>
+          </button>
         </section>
         <section className="sns">
           <h2 id="sns__title">Follow Me</h2>
