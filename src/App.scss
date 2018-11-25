@@ -92,20 +92,23 @@ section {
     width: $content_width;
     margin: 0 auto;
     padding: 5rem 0;
+    padding-bottom: 0;
+    overflow: hidden;
   }
   &__info {
     float: left;
+    width: 5%;
     .logo {
       a {
-        background: rgb(189, 189, 189);
-        color: #fff;
-        font-weight: normal;
-        padding: 1.4rem 1rem;
+        margin: 0;
       }
     }
   }
 }
 
+.nav {
+  float: right;
+}
 .navList {
   float: right;
   &__item {
@@ -496,13 +499,9 @@ section {
   .header {
     display: block;
     &__inner {
-      width: 100%;
-      padding: 0;
+      width: 90%;
+      padding: 1rem 0;
       .header__info {
-        display: block;
-        width: 90%;
-        margin: 0 auto;
-        margin-bottom: 1.5rem;
         .logo {
           width: 30px;
           height: 30px;
@@ -559,6 +558,10 @@ section {
     .about__box {
       width: 100%;
     }
+  }
+
+  .home__inner {
+    padding-top: 3rem;
   }
 
   .about__inner {

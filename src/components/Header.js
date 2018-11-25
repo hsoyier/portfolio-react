@@ -1,4 +1,5 @@
 import React from "react";
+import profile from "../assets/logo.png";
 
 // Route should be wrapped by div tag
 const Header = () => {
@@ -7,7 +8,9 @@ const Header = () => {
       <div className="header__inner">
         <div className="header__info">
           <h1 className="logo">
-            <a href="/">Rei</a>
+            <a href="/">
+              <img src={profile} alt="logo" />
+            </a>
           </h1>
         </div>
         <nav className="nav">
