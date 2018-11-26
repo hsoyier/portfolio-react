@@ -2,7 +2,7 @@
 
 > This is my personal portfolio web site. It shows my works and projects experience.
 
-![Example screenshot](./src/assets/project_example03.jpg)
+![Example screenshot](./src/components/Projects/Project/assets/project_example03.jpg)
 
 ## Table of contents
 
