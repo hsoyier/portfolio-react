@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import "./scss/style.scss";
 import Work01 from "./workExamples/Work01";
 import Work02 from "./workExamples/Work02";
 import Work03 from "./workExamples/Work03";

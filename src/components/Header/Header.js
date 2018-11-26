@@ -1,5 +1,6 @@
 import React from "react";
-import profile from "../assets/logo.png";
+import "./scss/style.scss";
+import logo from "./assets/logo.png";
 
 // Route should be wrapped by div tag
 const Header = () => {
@@ -9,7 +10,7 @@ const Header = () => {
         <div className="header__info">
           <h1 className="logo">
             <a href="/">
-              <img src={profile} alt="logo" />
+              <img src={logo} alt="logo" />
             </a>
           </h1>
         </div>

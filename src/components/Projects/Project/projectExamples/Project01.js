@@ -1,5 +1,5 @@
 import React from "react";
-import project_example01 from "../../assets/project_example01.jpg";
+import project_example01 from "../assets/project_example01.jpg";
 
 const Project01 = props => {
   return (

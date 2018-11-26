@@ -1,0 +1,61 @@
+$bg_main: #d7efee;
+$content_width: 75%;
+$text_color: #636469;
+$button_color: #afaaaa;
+$button_color_hover: #71bbb8;
+$github_color: #4078c0;
+$linkedin_color: #0077b5;
+$twitter_color: #1da1f2;
+
+.home {
+  background: $bg_main;
+  &__inner {
+    width: $content_width;
+    margin: 0 auto;
+    padding: 10rem 0;
+    .title {
+      text-align: left;
+      font-size: 4rem;
+      padding: 0;
+      margin-bottom: 3.4rem;
+      display: table-caption;
+      .title__name {
+        font-size: 3.5rem;
+      }
+      .title__position {
+        font-size: 8rem;
+        font-weight: 800;
+        letter-spacing: 1rem;
+        line-height: 8rem;
+      }
+    }
+    .title__detail {
+      width: 50%;
+      color: $text_color;
+      transform: translateY(40px);
+    }
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .home {
+    &__inner {
+      width: 90%;
+      .title {
+        .title__name {
+          font-size: 2.4rem;
+        }
+        .title__position {
+          font-size: 4rem;
+          line-height: 4.5rem;
+        }
+      }
+      .title__detail {
+        width: 100%;
+      }
+    }
+  }
+  .home__inner {
+    padding-top: 3rem;
+  }
+}

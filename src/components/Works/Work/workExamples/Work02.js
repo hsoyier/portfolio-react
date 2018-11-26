@@ -1,23 +1,25 @@
 import React from "react";
-import work_example03 from "../../assets/work_example03.jpg";
+import work_example02 from "..//assets/work_example02.jpg";
 
-const Work03 = props => {
+const Work02 = props => {
   return (
     <div className="example" id="example1">
       <button onClick={props.closeModal}>
         <i className="fas fa-times fa-3x" />
       </button>
-      <h3>JADA Education Package</h3>
+      <h3>Breitling Japan</h3>
       <div className="example__inner">
         <div className="example__info">
           <p className="example__info__text">
-            JADA Education Package is created for promoting the instructors to
-            keep the anti-doping policy. I was in charge of coding static page
-            from scratch.
+            This is Breitling Japan official website. I was in charge of
+            updating the pages when the event occurs or the new watch model is
+            released or other stuff related to Breitling. I was coding with
+            HTML, CSS, JavaScript(jQuery). Also, I edited the photos using Adobe
+            Photoshop and sometimes Adobe After Effect.
           </p>
           <a
             className="webLink"
-            href="https://www.playtrue2020-sp4t.jp/edu_package/"
+            href="https://www.breitling.co.jp/"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -25,8 +27,8 @@ const Work03 = props => {
           </a>
           <img
             className="example__info__image"
-            src={work_example03}
-            alt="JADA Education Package"
+            src={work_example02}
+            alt="Breitling Japan"
           />
         </div>
         <div className="example__detail">
@@ -37,7 +39,9 @@ const Work03 = props => {
             </li>
             <li className="example__list__item">
               <dt>What I used</dt>
-              <dd>HTML5, CSS3, JavaScript</dd>
+              <dd>
+                HTML, CSS, JavaScript, Adobe Photoshop, Adobe After Effect
+              </dd>
             </li>
           </ul>
         </div>
@@ -46,4 +50,4 @@ const Work03 = props => {
   );
 };
 
-export default Work03;
+export default Work02;

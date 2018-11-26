@@ -1,0 +1,27 @@
+$bg_main: #d7efee;
+$content_width: 75%;
+$text_color: #636469;
+
+.footer {
+  background: $bg_main;
+  padding: 2rem;
+  .footer__inner {
+    width: $content_width;
+    margin: 0 auto;
+    padding: 2rem 0;
+    .copyright {
+      color: $text_color;
+      font-size: 1.3rem;
+      letter-spacing: 0.2em;
+      text-align: center;
+    }
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .footer {
+    &__inner {
+      width: 100%;
+    }
+  }
+}

@@ -1,5 +1,5 @@
 import React from "react";
-import work_example02 from "../../assets/work_example02.jpg";
+import work_example01 from "../assets/work_example01.jpg";
 
 const Work02 = props => {
   return (
@@ -7,19 +7,21 @@ const Work02 = props => {
       <button onClick={props.closeModal}>
         <i className="fas fa-times fa-3x" />
       </button>
-      <h3>Breitling Japan</h3>
+      <h3>Tokyo Metropolitan Volunteerism Navigation Website</h3>
       <div className="example__inner">
         <div className="example__info">
           <p className="example__info__text">
-            This is Breitling Japan official website. I was in charge of
-            updating the pages when the event occurs or the new watch model is
-            released or other stuff related to Breitling. I was coding with
-            HTML, CSS, JavaScript(jQuery). Also, I edited the photos using Adobe
-            Photoshop and sometimes Adobe After Effect.
+            The website is to promote the volunteers for the upcoming Tokyo 2020
+            Olympic. In Japan volunteering culture is not spread and not so
+            common so that this website is released. I was in charge of updating
+            the website when they add new topics. Mainly I was coding with
+            HTML5, CSS3, JavaScript also utilized gulp, sass as a local
+            development environment. In addition, I edited some of the design
+            work using Adobe Photoshop.
           </p>
           <a
             className="webLink"
-            href="https://www.breitling.co.jp/"
+            href="http://www.city-volunteer.metro.tokyo.jp/index.html"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -27,8 +29,8 @@ const Work02 = props => {
           </a>
           <img
             className="example__info__image"
-            src={work_example02}
-            alt="Breitling Japan"
+            src={work_example01}
+            alt="Tokyo Metropolitan Volunteerism Navigation Website"
           />
         </div>
         <div className="example__detail">
@@ -39,9 +41,7 @@ const Work02 = props => {
             </li>
             <li className="example__list__item">
               <dt>What I used</dt>
-              <dd>
-                HTML, CSS, JavaScript, Adobe Photoshop, Adobe After Effect
-              </dd>
+              <dd>HTML5, CSS3, JavaScript, Adobe Photoshop</dd>
             </li>
           </ul>
         </div>

@@ -1,0 +1,96 @@
+$text_color: #636469;
+
+.project {
+  &__inner {
+    width: 75%;
+    margin: 0 auto;
+    .project__list {
+      transform: translateY(50px);
+      display: flex;
+      justify-content: space-between;
+      padding: 0;
+      list-style-type: none;
+      .project__item {
+        padding: 0;
+        width: 29%;
+        .project__itemWrap {
+          cursor: pointer;
+          position: relative;
+          .project__anchor {
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            text-decoration: underline;
+            display: block;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            outline: none;
+          }
+
+          .project__detailBox {
+            padding: 3rem 0;
+            .project__title {
+              text-align: center;
+              color: #333;
+              font-size: 2.4rem;
+              font-weight: bold;
+              margin-bottom: 1rem;
+              line-height: 3.2rem;
+              a {
+                color: #000;
+              }
+            }
+            .project__text {
+              margin-bottom: 1rem;
+              color: $text_color;
+            }
+            .project__skill {
+              background: #efefef;
+              padding: 0.8rem 1rem;
+              display: inline-block;
+              margin-right: 1rem;
+              margin-bottom: 1rem;
+              border-radius: 8px;
+              color: #636469;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .project {
+    &__inner {
+      width: 90%;
+      .project__list {
+        display: block;
+        .project__item {
+          width: 100%;
+          margin-bottom: 3rem;
+          .project__itemWrap {
+            .project__detailBox {
+              min-height: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .project__inner .project__list {
+    transform: none;
+  }
+  .ReactModal__Content {
+    left: 0 !important;
+    right: 0 !important;
+  }
+  .ReactModal__Content--after-open {
+    left: 0;
+    right: 0;
+  }
+}

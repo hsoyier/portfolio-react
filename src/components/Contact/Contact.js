@@ -1,5 +1,6 @@
 import React from "react";
-import resume from "../assets/reiyoshizawa_resume.pdf";
+import "./scss/style.scss";
+import resume from "./assets/reiyoshizawa_resume.pdf";
 
 const Contact = props => {
   return (

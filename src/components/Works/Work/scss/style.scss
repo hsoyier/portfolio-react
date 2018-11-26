@@ -1,0 +1,115 @@
+.example {
+  width: 70%;
+  margin: 0 auto;
+  padding: 6rem 0;
+  button {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    outline: none;
+  }
+  .example__inner {
+    display: flex;
+    justify-content: space-between;
+    padding: 5rem 0;
+    .example__info {
+      width: 60%;
+      .example__info__text {
+        color: #636469;
+      }
+      .example__info__anchor {
+        display: flex;
+        justify-content: space-between;
+      }
+      .webLink {
+        width: 170px;
+        height: auto;
+        text-align: center;
+        background: #afaaaa;
+        padding: 2rem 3rem;
+        display: block;
+        color: #fff;
+        text-decoration: none;
+        margin-top: 2rem;
+      }
+      .githubLink {
+        width: 170px;
+        height: auto;
+        text-align: center;
+        background: #333;
+        padding: 2rem 3rem;
+        display: block;
+        color: #fff;
+        text-decoration: none;
+        margin-top: 2rem;
+        i {
+          margin-right: 1.4rem;
+        }
+      }
+      .webLink:hover {
+        background: #71bbb8;
+      }
+      .githubLink:hover {
+        background: #4078c0;
+      }
+      .example__info__image {
+        margin: 5rem 0;
+      }
+    }
+    .example__detail {
+      width: 30%;
+      .example__list {
+        .example__list__item {
+          margin-bottom: 4rem;
+          dt {
+            font-size: 2rem;
+            font-weight: bold;
+          }
+          dd {
+            padding: 1rem 0;
+            color: #636469;
+            line-height: 2.6rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .example {
+    width: 100%;
+    .example__inner {
+      display: flex;
+      padding: 0;
+      flex-wrap: wrap;
+      .example__info {
+        width: 100%;
+        order: 2;
+        .webLink {
+          width: 100%;
+          padding: 2rem 0;
+        }
+        .githubLink {
+          width: 100%;
+          padding: 2rem 0;
+        }
+        .example__info__anchor {
+          display: block;
+        }
+      }
+      .example__detail {
+        width: 100%;
+        order: 1;
+        .example__list {
+          .example__list__item {
+            margin-bottom: 2rem;
+          }
+        }
+      }
+    }
+  }
+}
