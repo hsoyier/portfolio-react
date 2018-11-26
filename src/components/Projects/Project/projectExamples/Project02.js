@@ -26,7 +26,7 @@ const Project02 = props => {
             </a>
             <a
               className="githubLink"
-              href="https://github.com/oyyer/joyevent"
+              href="https://github.com/hsoyier/joyevent"
               target="_blank"
               rel="noopener noreferrer"
             >

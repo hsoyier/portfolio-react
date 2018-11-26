@@ -46,7 +46,7 @@ const Contact = props => {
             <li className="sns__list--item">
               <a
                 className="github"
-                href="https://github.com/oyyer"
+                href="https://github.com/hsoyier"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -66,7 +66,7 @@ const Contact = props => {
             <li className="sns__list--item">
               <a
                 className="twitter"
-                href="https://twitter.com/oyyer_"
+                href="https://twitter.com/hsoyier"
                 target="_blank"
                 rel="noopener noreferrer"
               >

@@ -29,7 +29,7 @@ const Project03 = props => {
             </a>
             <a
               className="githubLink"
-              href="https://github.com/oyyer/portfolio-react"
+              href="https://github.com/hsoyier/portfolio-react"
               target="_blank"
               rel="noopener noreferrer"
             >

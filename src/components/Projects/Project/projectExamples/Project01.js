@@ -32,7 +32,7 @@ const Project01 = props => {
             </a>
             <a
               className="githubLink"
-              href="https://github.com/oyyer/visual-translate"
+              href="https://github.com/hsoyier/visual-translate"
               target="_blank"
               rel="noopener noreferrer"
             >
