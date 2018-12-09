@@ -24,7 +24,7 @@ const Project01 = props => {
           <div className="example__info__anchor">
             <a
               className="webLink"
-              href="https://visual-translate.reiyoshizawa.com/"
+              href="http://visual-translate.reiyoshizawa.com/"
               target="_blank"
               rel="noopener noreferrer"
             >
