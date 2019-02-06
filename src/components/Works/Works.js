@@ -1,33 +1,33 @@
-import React, { Component } from "react";
-import "./scss/style.scss";
-import Modal from "react-modal";
-import Work from "./Work/Work";
-import work_example01 from "./Work/assets/work_example01.jpg";
-import work_example02 from "./Work/assets/work_example02.jpg";
-import work_example03 from "./Work/assets/work_example03.jpg";
+import React, { Component } from 'react'
+import './scss/style.scss'
+import Modal from 'react-modal'
+import Work from './Work/Work'
+import work_example01 from './Work/assets/work_example01.jpg'
+import work_example02 from './Work/assets/work_example02.jpg'
+import work_example03 from './Work/assets/work_example03.jpg'
 
 // Make sure to bind modal to your appElement (http://reactcommunity.org/react-modal/accessibility/)
-Modal.setAppElement("#root");
+Modal.setAppElement('#root')
 
 class Works extends Component {
   state = {
     modalIsOpen: false,
-    example: ""
-  };
+    example: '',
+  }
 
   openModal = e => {
-    e.preventDefault();
-    console.log(e.target.value);
-    const example = e.target.name;
-    this.setState({ modalIsOpen: true, example });
-  };
+    e.preventDefault()
+    console.log(e.target.value)
+    const example = e.target.name
+    this.setState({ modalIsOpen: true, example })
+  }
 
   closeModal = () => {
-    this.setState({ modalIsOpen: false });
-  };
+    this.setState({ modalIsOpen: false })
+  }
 
   render() {
-    const { example } = this.state;
+    const { example } = this.state
     return (
       <section id="works" className="project">
         <Modal
@@ -100,8 +100,8 @@ class Works extends Component {
           </ul>
         </div>
       </section>
-    );
+    )
   }
 }
 
-export default Works;
+export default Works

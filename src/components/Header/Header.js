@@ -1,6 +1,6 @@
-import React from "react";
-import "./scss/style.scss";
-import logo from "./assets/logo.png";
+import React from 'react'
+import './scss/style.scss'
+import logo from './assets/logo.png'
 
 // Route should be wrapped by div tag
 const Header = () => {
@@ -16,14 +16,14 @@ const Header = () => {
         </div>
         <nav className="nav">
           <ul className="navList">
+            <li className="navList__item navList__item02">
+              <a className="introtext" href="#projects">
+                Projects
+              </a>
+            </li>
             <li className="navList__item navList__item01">
               <a className="introtext" href="#about">
                 About
-              </a>
-            </li>
-            <li className="navList__item navList__item02">
-              <a className="introtext" href="#works">
-                Works
               </a>
             </li>
             <li className="navList__item navList__item03">
@@ -35,7 +35,7 @@ const Header = () => {
         </nav>
       </div>
     </header>
-  );
-};
+  )
+}
 
-export default Header;
+export default Header
